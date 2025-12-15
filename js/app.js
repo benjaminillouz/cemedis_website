@@ -211,9 +211,15 @@ let mapInitAttempts = 0;
 const MAX_MAP_INIT_ATTEMPTS = 50; // 5 seconds max
 
 function initMap() {
+  // Prevent double initialization
+  if (mapReady) {
+    console.log('Map already initialized');
+    return;
+  }
+
   const mapContainer = document.getElementById('map');
   if (!mapContainer) {
-    console.log('No map container found');
+    console.log('No map container found on this page');
     return;
   }
 
@@ -225,10 +231,12 @@ function initMap() {
       setTimeout(initMap, 100);
     } else {
       console.error('Google Maps API failed to load after 5 seconds');
-      mapContainer.innerHTML = '<div style="display:flex;align-items:center;justify-content:center;height:100%;color:#666;">Carte indisponible - Erreur de chargement Google Maps</div>';
+      mapContainer.innerHTML = '<div style="display:flex;align-items:center;justify-content:center;height:100%;color:#666;padding:2rem;text-align:center;">Carte indisponible<br><small>Erreur de chargement Google Maps</small></div>';
     }
     return;
   }
+
+  console.log('Google Maps API is available, creating map...');
 
   try {
     // Create the map
@@ -249,11 +257,12 @@ function initMap() {
 
     // If centers are already loaded, update map
     if (centersLoaded && filteredCenters.length > 0) {
+      console.log('Centers already loaded, updating map markers...');
       updateMap();
     }
   } catch (error) {
     console.error('Error initializing Google Maps:', error);
-    mapContainer.innerHTML = '<div style="display:flex;align-items:center;justify-content:center;height:100%;color:#666;">Erreur lors du chargement de la carte</div>';
+    mapContainer.innerHTML = '<div style="display:flex;align-items:center;justify-content:center;height:100%;color:#666;padding:2rem;text-align:center;">Erreur lors du chargement de la carte<br><small>' + error.message + '</small></div>';
   }
 }
 
