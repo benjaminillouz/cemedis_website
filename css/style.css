@@ -1286,3 +1286,281 @@ a:hover {
 .privacy-content li {
   margin-bottom: 0.5rem;
 }
+
+/* ===== Enhanced Mobile Styles ===== */
+@media (max-width: 767px) {
+  /* Header mobile */
+  .header-inner {
+    height: 70px;
+  }
+
+  .logo img {
+    height: 50px;
+  }
+
+  .nav-cta {
+    display: none;
+  }
+
+  /* Hero mobile */
+  .hero {
+    min-height: auto;
+    padding: 100px 0 60px;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+  }
+
+  .hero-actions .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .hero-search {
+    flex-direction: column;
+    padding: 0.75rem;
+  }
+
+  .hero-search input {
+    padding: 0.875rem 1rem;
+  }
+
+  .hero-search .btn {
+    width: 100%;
+  }
+
+  /* Sections mobile */
+  .section {
+    padding: 3rem 0;
+  }
+
+  .section-header {
+    margin-bottom: 2rem;
+  }
+
+  .section-header h2 {
+    font-size: 1.75rem;
+  }
+
+  .section-header p {
+    font-size: 1rem;
+  }
+
+  /* Stats mobile */
+  .stats {
+    margin-top: -2rem;
+  }
+
+  .stat-card {
+    padding: 1.25rem;
+  }
+
+  .stat-number {
+    font-size: 1.75rem;
+  }
+
+  .stat-label {
+    font-size: 0.75rem;
+  }
+
+  .stat-icon {
+    width: 45px;
+    height: 45px;
+    font-size: 1.25rem;
+  }
+
+  /* Services mobile */
+  .service-card {
+    padding: 1.5rem;
+  }
+
+  .service-icon {
+    width: 55px;
+    height: 55px;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  /* Center cards mobile */
+  .center-card {
+    margin-bottom: 1rem;
+  }
+
+  .center-header {
+    padding: 1rem;
+  }
+
+  .center-body {
+    padding: 1rem;
+  }
+
+  .center-actions {
+    flex-direction: column;
+  }
+
+  .center-actions .btn {
+    width: 100%;
+  }
+
+  /* Map mobile */
+  .map-container {
+    height: 300px;
+    border-radius: var(--radius-lg);
+  }
+
+  /* CTA mobile */
+  .cta h2 {
+    font-size: 1.5rem;
+  }
+
+  .cta p {
+    font-size: 1rem;
+  }
+
+  .cta-actions {
+    flex-direction: column;
+  }
+
+  .cta-actions .btn {
+    width: 100%;
+  }
+
+  /* Footer mobile */
+  .footer {
+    padding: 3rem 0 1.5rem;
+  }
+
+  .footer-grid {
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .footer-logo img {
+    height: 45px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.75rem;
+  }
+
+  .footer-legal {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  /* Mobile nav improvements */
+  .mobile-nav {
+    top: 70px;
+    padding: 1.5rem;
+  }
+
+  .mobile-nav-link {
+    padding: 0.875rem 0;
+    font-size: 1.1rem;
+  }
+
+  /* Buttons mobile */
+  .btn {
+    padding: 0.75rem 1.25rem;
+    font-size: 0.9rem;
+  }
+
+  .btn-lg {
+    padding: 0.875rem 1.5rem;
+    font-size: 1rem;
+  }
+
+  /* Urgences page mobile */
+  .urgences-hero-content {
+    padding: 2.5rem 0;
+  }
+
+  .urgences-hero h1 {
+    font-size: 1.75rem;
+  }
+
+  .urgences-hero p {
+    font-size: 1rem;
+  }
+
+  .urgences-actions {
+    flex-direction: column;
+  }
+
+  .urgences-actions .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .info-card {
+    padding: 1.5rem;
+  }
+
+  .info-card-icon {
+    width: 55px;
+    height: 55px;
+    font-size: 1.5rem;
+  }
+
+  .urgence-type {
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .urgence-type-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  /* Contact page mobile */
+  .contact-grid {
+    gap: 2rem;
+  }
+
+  .contact-info {
+    padding: 1.5rem;
+  }
+
+  .form-container iframe {
+    min-height: 600px;
+  }
+
+  /* Typography mobile */
+  h1 { font-size: 1.75rem; }
+  h2 { font-size: 1.5rem; }
+  h3 { font-size: 1.25rem; }
+  h4 { font-size: 1.1rem; }
+}
+
+/* Small mobile (< 375px) */
+@media (max-width: 374px) {
+  .container {
+    padding: 0 1rem;
+  }
+
+  .hero h1 {
+    font-size: 1.5rem;
+  }
+
+  .stat-number {
+    font-size: 1.5rem;
+  }
+
+  .btn {
+    padding: 0.625rem 1rem;
+    font-size: 0.85rem;
+  }
+}
