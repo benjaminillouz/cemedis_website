@@ -310,12 +310,12 @@ a:hover {
 .btn-primary {
   background: var(--gradient-primary);
   color: var(--cemedis-white);
-  box-shadow: var(--shadow-md), 0 4px 14px rgba(0, 102, 204, 0.4);
+  box-shadow: var(--shadow-md), 0 4px 14px rgba(0, 75, 99, 0.4);
 }
 
 .btn-primary:hover {
   transform: translateY(-2px);
-  box-shadow: var(--shadow-lg), 0 6px 20px rgba(0, 102, 204, 0.5);
+  box-shadow: var(--shadow-lg), 0 6px 20px rgba(0, 75, 99, 0.5);
   color: var(--cemedis-white);
 }
 
@@ -1078,7 +1078,7 @@ a:hover {
 .form-select:focus {
   outline: none;
   border-color: var(--cemedis-primary);
-  box-shadow: 0 0 0 3px rgba(0, 102, 204, 0.1);
+  box-shadow: 0 0 0 3px rgba(0, 75, 99, 0.1);
 }
 
 .form-textarea {
