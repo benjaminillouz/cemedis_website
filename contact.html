@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contactez CEMEDIS - Réseau de centres dentaires en Île-de-France. Questions, informations, réclamations.">
+  <title>Nous Contacter - CEMEDIS</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <style>
+    .page-header {
+      padding-top: 120px;
+      padding-bottom: 60px;
+      background: var(--gradient-hero);
+      color: white;
+    }
+    .page-header h1 {
+      color: white;
+      margin-bottom: 1rem;
+    }
+    .page-header p {
+      color: rgba(255,255,255,0.9);
+      font-size: 1.125rem;
+      max-width: 600px;
+    }
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 3rem;
+    }
+    @media (min-width: 1024px) {
+      .contact-grid {
+        grid-template-columns: 1fr 2fr;
+      }
+    }
+    .contact-info {
+      background: var(--cemedis-gray-50);
+      padding: 2rem;
+      border-radius: var(--radius-xl);
+    }
+    .contact-info h3 {
+      margin-bottom: 2rem;
+    }
+    .contact-item {
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+    }
+    .contact-item-icon {
+      flex-shrink: 0;
+      width: 50px;
+      height: 50px;
+      background: white;
+      border-radius: var(--radius-lg);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--cemedis-primary);
+      box-shadow: var(--shadow-sm);
+    }
+    .contact-item-content h4 {
+      font-size: 1rem;
+      margin-bottom: 0.25rem;
+    }
+    .contact-item-content p {
+      color: var(--cemedis-gray-600);
+      font-size: 0.95rem;
+      margin: 0;
+    }
+    .contact-item-content a {
+      color: var(--cemedis-primary);
+    }
+    .form-container {
+      background: white;
+      border-radius: var(--radius-xl);
+      box-shadow: var(--shadow-lg);
+      overflow: hidden;
+    }
+    .form-container iframe {
+      width: 100%;
+      min-height: 800px;
+      border: none;
+      display: block;
+    }
+    .faq-section {
+      background: var(--cemedis-gray-50);
+    }
+    .faq-item {
+      background: white;
+      border-radius: var(--radius-lg);
+      margin-bottom: 1rem;
+      overflow: hidden;
+      box-shadow: var(--shadow-sm);
+    }
+    .faq-question {
+      padding: 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+      font-weight: 600;
+      color: var(--cemedis-gray-900);
+    }
+    .faq-question:hover {
+      color: var(--cemedis-primary);
+    }
+    .faq-question svg {
+      transition: transform var(--transition);
+    }
+    .faq-item.active .faq-question svg {
+      transform: rotate(180deg);
+    }
+    .faq-answer {
+      padding: 0 1.5rem;
+      max-height: 0;
+      overflow: hidden;
+      transition: all var(--transition);
+    }
+    .faq-item.active .faq-answer {
+      max-height: 500px;
+      padding-bottom: 1.5rem;
+    }
+    .faq-answer p {
+      color: var(--cemedis-gray-600);
+      font-size: 0.95rem;
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <div class="header-inner">
+        <a href="index.html" class="logo">
+          <svg width="45" height="45" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="50" cy="50" r="48" fill="#0066CC"/>
+            <path d="M50 20C38.954 20 30 28.954 30 40c0 15 20 35 20 35s20-20 20-35c0-11.046-8.954-20-20-20z" fill="white"/>
+            <circle cx="50" cy="40" r="8" fill="#0066CC"/>
+            <path d="M35 70h30v8H35z" fill="white" rx="2"/>
+          </svg>
+          <span>CEMEDIS</span>
+        </a>
+
+        <nav class="nav">
+          <a href="index.html" class="nav-link">Accueil</a>
+          <a href="etablissements.html" class="nav-link">Nos Centres</a>
+          <a href="consultations.html" class="nav-link">Services</a>
+          <a href="urgences.html" class="nav-link">Urgences</a>
+          <a href="rejoindre.html" class="nav-link">Nous Rejoindre</a>
+          <a href="contact.html" class="nav-link active">Contact</a>
+        </nav>
+
+        <div class="nav-cta">
+          <a href="urgences.html" class="btn btn-urgent btn-sm">
+            <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/>
+            </svg>
+            Urgences
+          </a>
+        </div>
+
+        <button class="mobile-menu-btn" aria-label="Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+
+    <nav class="mobile-nav">
+      <a href="index.html" class="mobile-nav-link">Accueil</a>
+      <a href="etablissements.html" class="mobile-nav-link">Nos Centres</a>
+      <a href="consultations.html" class="mobile-nav-link">Services</a>
+      <a href="urgences.html" class="mobile-nav-link">Urgences</a>
+      <a href="rejoindre.html" class="mobile-nav-link">Nous Rejoindre</a>
+      <a href="contact.html" class="mobile-nav-link">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Page Header -->
+  <section class="page-header">
+    <div class="container">
+      <h1>Contactez-nous</h1>
+      <p>Une question, une demande d'information ou une réclamation ? Notre équipe est à votre écoute.</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info scroll-animate">
+          <h3>Informations de contact</h3>
+
+          <div class="contact-item">
+            <div class="contact-item-icon">
+              <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"/>
+              </svg>
+            </div>
+            <div class="contact-item-content">
+              <h4>Email</h4>
+              <p><a href="mailto:contact@cemedis.fr">contact@cemedis.fr</a></p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-item-icon">
+              <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"/>
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"/>
+              </svg>
+            </div>
+            <div class="contact-item-content">
+              <h4>Nos centres</h4>
+              <p>24 centres en Île-de-France<br><a href="etablissements.html">Voir la liste complète</a></p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-item-icon">
+              <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"/>
+              </svg>
+            </div>
+            <div class="contact-item-content">
+              <h4>Horaires</h4>
+              <p>Lundi - Vendredi : 9h - 19h<br>Samedi : 9h - 13h (certains centres)</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-item-icon" style="background: #FEE2E2; color: #DC2626;">
+              <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126zM12 15.75h.007v.008H12v-.008z"/>
+              </svg>
+            </div>
+            <div class="contact-item-content">
+              <h4>Urgences</h4>
+              <p>Pour une urgence dentaire, consultez notre <a href="urgences.html">page dédiée</a></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-container scroll-animate" style="animation-delay: 200ms;">
+          <iframe src="https://podio.com/webforms/26110563/1961795" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="section faq-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">FAQ</span>
+        <h2>Questions fréquentes</h2>
+        <p>Retrouvez les réponses aux questions les plus courantes.</p>
+      </div>
+
+      <div style="max-width: 800px; margin: 0 auto;">
+        <div class="faq-item active">
+          <div class="faq-question" onclick="toggleFaq(this)">
+            Comment prendre rendez-vous ?
+            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/>
+            </svg>
+          </div>
+          <div class="faq-answer">
+            <p>Vous pouvez prendre rendez-vous directement en ligne via Doctolib sur la fiche de chaque centre, ou en appelant le centre de votre choix. Consultez notre page "Nos Centres" pour trouver les coordonnées.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFaq(this)">
+            Acceptez-vous les nouveaux patients ?
+            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/>
+            </svg>
+          </div>
+          <div class="faq-answer">
+            <p>Oui, tous nos centres accueillent les nouveaux patients. N'hésitez pas à prendre rendez-vous en ligne ou par téléphone.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFaq(this)">
+            Quels sont les moyens de paiement acceptés ?
+            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/>
+            </svg>
+          </div>
+          <div class="faq-answer">
+            <p>Nous acceptons les paiements par carte bancaire, chèque et espèces. Nous pratiquons le tiers payant avec la plupart des mutuelles.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFaq(this)">
+            Proposez-vous des facilités de paiement ?
+            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/>
+            </svg>
+          </div>
+          <div class="faq-answer">
+            <p>Oui, pour les traitements importants (implants, orthodontie...), nous proposons des facilités de paiement. N'hésitez pas à en discuter avec nos secrétaires lors de votre visite.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFaq(this)">
+            Comment annuler ou modifier mon rendez-vous ?
+            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/>
+            </svg>
+          </div>
+          <div class="faq-answer">
+            <p>Vous pouvez modifier ou annuler votre rendez-vous directement sur Doctolib ou en appelant le centre concerné. Nous vous remercions de nous prévenir au moins 24h à l'avance.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="footer-logo">
+            <svg width="40" height="40" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="50" cy="50" r="48" fill="#0066CC"/>
+              <path d="M50 20C38.954 20 30 28.954 30 40c0 15 20 35 20 35s20-20 20-35c0-11.046-8.954-20-20-20z" fill="white"/>
+              <circle cx="50" cy="40" r="8" fill="#0066CC"/>
+              <path d="M35 70h30v8H35z" fill="white" rx="2"/>
+            </svg>
+            <span>CEMEDIS</span>
+          </a>
+          <p class="footer-desc">Réseau de centres dentaires et médicaux en Île-de-France.</p>
+        </div>
+
+        <div class="footer-column">
+          <h4>Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="etablissements.html">Nos Centres</a></li>
+            <li><a href="consultations.html">Services</a></li>
+            <li><a href="urgences.html">Urgences</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Informations</h4>
+          <ul class="footer-links">
+            <li><a href="rejoindre.html">Nous Rejoindre</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="privacy.html">Confidentialité</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Contact</h4>
+          <div class="footer-contact-item">
+            <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"/>
+            </svg>
+            <span>contact@cemedis.fr</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2024 CEMEDIS. Tous droits réservés.</p>
+        <div class="footer-legal">
+          <a href="privacy.html">Politique de confidentialité</a>
+          <a href="mentions-legales.html">Mentions légales</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+  <script>
+    function toggleFaq(element) {
+      const item = element.parentElement;
+      item.classList.toggle('active');
+    }
+  </script>
+</body>
+</html>
