@@ -208,15 +208,17 @@ function createCenterCard(center) {
 
 // ===== Initialize Map (Google Maps) =====
 function initMap() {
-  // Google Maps will be initialized by initGoogleMap callback
-}
-
-// Global function for Google Maps callback
-window.initGoogleMap = function() {
   const mapContainer = document.getElementById('map');
-  if (!mapContainer || typeof google === 'undefined') return;
+  if (!mapContainer) return;
 
-  // Center on Paris
+  // Wait for Google Maps to be available
+  if (typeof google === 'undefined' || typeof google.maps === 'undefined') {
+    // Retry after 100ms
+    setTimeout(initMap, 100);
+    return;
+  }
+
+  // Create the map
   map = new google.maps.Map(mapContainer, {
     center: { lat: 48.8566, lng: 2.3522 },
     zoom: 11,
@@ -230,10 +232,18 @@ window.initGoogleMap = function() {
   });
 
   mapReady = true;
+  console.log('Google Maps initialized');
 
   // If centers are already loaded, update map
   if (centersLoaded && filteredCenters.length > 0) {
     updateMap();
+  }
+}
+
+// Global function for Google Maps callback (backup)
+window.initGoogleMap = function() {
+  if (!mapReady) {
+    initMap();
   }
 };
 
