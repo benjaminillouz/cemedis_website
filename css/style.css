@@ -222,25 +222,32 @@ a:hover {
 }
 
 .nav-cta {
-  display: flex;
+  display: none;
   align-items: center;
   gap: 1rem;
 }
 
+@media (min-width: 1024px) {
+  .nav-cta {
+    display: flex;
+  }
+}
+
 /* Mobile Menu */
 .mobile-menu-btn {
-  display: flex;
+  display: none;
   flex-direction: column;
   gap: 5px;
   padding: 0.5rem;
   background: none;
   border: none;
   cursor: pointer;
+  z-index: 100;
 }
 
-@media (min-width: 1024px) {
+@media (max-width: 1023px) {
   .mobile-menu-btn {
-    display: none;
+    display: flex;
   }
 }
 
@@ -1296,10 +1303,6 @@ a:hover {
 
   .logo img {
     height: 50px;
-  }
-
-  .nav-cta {
-    display: none;
   }
 
   /* Hero mobile */
