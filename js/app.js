@@ -200,26 +200,45 @@ function createCenterCard(center) {
   `;
 }
 
-// ===== Initialize Map =====
+// ===== Initialize Map (Google Maps) =====
 function initMap() {
-  const mapContainer = document.getElementById('map');
-  if (!mapContainer || typeof L === 'undefined') return;
-
-  // Center on Paris
-  map = L.map('map').setView([48.8566, 2.3522], 11);
-
-  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-  }).addTo(map);
+  // Google Maps will be initialized by initGoogleMap callback
 }
 
-// ===== Update Map Markers =====
+// Global function for Google Maps callback
+window.initGoogleMap = function() {
+  const mapContainer = document.getElementById('map');
+  if (!mapContainer || typeof google === 'undefined') return;
+
+  // Center on Paris
+  map = new google.maps.Map(mapContainer, {
+    center: { lat: 48.8566, lng: 2.3522 },
+    zoom: 11,
+    styles: [
+      {
+        featureType: 'poi',
+        elementType: 'labels',
+        stylers: [{ visibility: 'off' }]
+      }
+    ]
+  });
+
+  // If centers are already loaded, update map
+  if (filteredCenters.length > 0) {
+    updateMap();
+  }
+};
+
+// ===== Update Map Markers (Google Maps) =====
 function updateMap() {
-  if (!map) return;
+  if (!map || typeof google === 'undefined') return;
 
   // Clear existing markers
-  markers.forEach(marker => map.removeLayer(marker));
+  markers.forEach(marker => marker.setMap(null));
   markers = [];
+
+  const bounds = new google.maps.LatLngBounds();
+  const infoWindow = new google.maps.InfoWindow();
 
   // Add new markers
   filteredCenters.forEach(center => {
@@ -228,38 +247,53 @@ function updateMap() {
 
     if (isNaN(lat) || isNaN(lng)) return;
 
-    const marker = L.marker([lat, lng], {
-      icon: L.divIcon({
-        className: 'custom-marker',
-        html: `<div style="background: var(--cemedis-primary, #004B63); width: 30px; height: 30px; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; box-shadow: 0 2px 10px rgba(0,0,0,0.3);">
-          <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg>
-        </div>`,
-        iconSize: [30, 30],
-        iconAnchor: [15, 30]
-      })
-    }).addTo(map);
+    const position = { lat, lng };
+
+    const marker = new google.maps.Marker({
+      position: position,
+      map: map,
+      title: center['Nom'] || 'Centre CEMEDIS',
+      icon: {
+        path: google.maps.SymbolPath.CIRCLE,
+        scale: 12,
+        fillColor: '#004B63',
+        fillOpacity: 1,
+        strokeColor: '#ffffff',
+        strokeWeight: 2
+      }
+    });
 
     const phone = center['Tel_app'] || '';
     const doctolib = center['Page Doctolib'] || '';
 
-    marker.bindPopup(`
-      <div style="min-width: 200px;">
-        <h4 class="map-popup-title">${escapeHTML(center['Nom'] || 'Centre CEMEDIS')}</h4>
-        <p class="map-popup-address">${escapeHTML(center['Adresse'] || '')}</p>
+    const contentString = `
+      <div style="min-width: 200px; padding: 0.5rem;">
+        <h4 style="margin: 0 0 0.5rem 0; color: #004B63; font-size: 1rem;">${escapeHTML(center['Nom'] || 'Centre CEMEDIS')}</h4>
+        <p style="margin: 0 0 0.75rem 0; color: #666; font-size: 0.875rem;">${escapeHTML(center['Adresse'] || '')}</p>
         <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
-          ${doctolib ? `<a href="${doctolib}" target="_blank" class="btn btn-primary btn-sm" style="font-size: 0.75rem; padding: 0.5rem 0.75rem;">Prendre RDV</a>` : ''}
-          ${phone ? `<a href="tel:${phone.replace(/\s/g, '')}" class="btn btn-secondary btn-sm" style="font-size: 0.75rem; padding: 0.5rem 0.75rem;">Appeler</a>` : ''}
+          ${doctolib ? `<a href="${doctolib}" target="_blank" style="display: inline-block; padding: 0.5rem 0.75rem; background: #004B63; color: white; text-decoration: none; border-radius: 6px; font-size: 0.75rem;">Prendre RDV</a>` : ''}
+          ${phone ? `<a href="tel:${phone.replace(/\s/g, '')}" style="display: inline-block; padding: 0.5rem 0.75rem; background: #f5f5f5; color: #004B63; text-decoration: none; border-radius: 6px; font-size: 0.75rem; border: 1px solid #004B63;">Appeler</a>` : ''}
         </div>
       </div>
-    `);
+    `;
+
+    marker.addListener('click', () => {
+      infoWindow.setContent(contentString);
+      infoWindow.open(map, marker);
+    });
 
     markers.push(marker);
+    bounds.extend(position);
   });
 
   // Fit map to markers
   if (markers.length > 0) {
-    const group = L.featureGroup(markers);
-    map.fitBounds(group.getBounds().pad(0.1));
+    map.fitBounds(bounds);
+    // Add some padding
+    const listener = google.maps.event.addListener(map, 'idle', function() {
+      if (map.getZoom() > 15) map.setZoom(15);
+      google.maps.event.removeListener(listener);
+    });
   }
 }
 
@@ -469,9 +503,10 @@ function findNearestCenter() {
       renderCenters();
       updateMap();
 
-      // Center map on user location
-      if (map) {
-        map.setView([userLat, userLng], 13);
+      // Center map on user location (Google Maps)
+      if (map && typeof google !== 'undefined') {
+        map.setCenter({ lat: userLat, lng: userLng });
+        map.setZoom(13);
       }
     },
     (error) => {
