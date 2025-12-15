@@ -225,7 +225,7 @@ function updateMap() {
     const marker = L.marker([lat, lng], {
       icon: L.divIcon({
         className: 'custom-marker',
-        html: `<div style="background: var(--cemedis-primary, #0066CC); width: 30px; height: 30px; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; box-shadow: 0 2px 10px rgba(0,0,0,0.3);">
+        html: `<div style="background: var(--cemedis-primary, #004B63); width: 30px; height: 30px; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; box-shadow: 0 2px 10px rgba(0,0,0,0.3);">
           <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg>
         </div>`,
         iconSize: [30, 30],
