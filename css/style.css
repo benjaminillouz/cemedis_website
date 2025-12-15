@@ -2,23 +2,23 @@
 
 /* ===== CSS Variables ===== */
 :root {
-  /* Primary Colors */
-  --cemedis-primary: #0066CC;
-  --cemedis-primary-dark: #004B8C;
-  --cemedis-primary-light: #3399FF;
+  /* Primary Colors - Charte CEMEDIS officielle */
+  --cemedis-primary: #004B63;
+  --cemedis-primary-dark: #003A4D;
+  --cemedis-primary-light: #006B8F;
 
   /* Secondary Colors */
-  --cemedis-secondary: #00A878;
-  --cemedis-secondary-dark: #007A5A;
-  --cemedis-secondary-light: #33C49A;
+  --cemedis-secondary: #005F7F;
+  --cemedis-secondary-dark: #004A63;
+  --cemedis-secondary-light: #007A9F;
 
   /* Accent Colors */
-  --cemedis-accent: #FF6B35;
+  --cemedis-accent: #00A0CC;
   --cemedis-urgent: #DC2626;
   --cemedis-urgent-light: #FEE2E2;
 
   /* Neutrals */
-  --cemedis-dark: #1A1A2E;
+  --cemedis-dark: #002535;
   --cemedis-gray-900: #111827;
   --cemedis-gray-800: #1F2937;
   --cemedis-gray-700: #374151;
@@ -33,7 +33,7 @@
 
   /* Gradients */
   --gradient-primary: linear-gradient(135deg, var(--cemedis-primary) 0%, var(--cemedis-primary-dark) 100%);
-  --gradient-hero: linear-gradient(135deg, #0066CC 0%, #004B8C 50%, #00A878 100%);
+  --gradient-hero: linear-gradient(135deg, #004B63 0%, #003A4D 100%);
   --gradient-card: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.1) 100%);
 
   /* Shadows */
