@@ -225,7 +225,7 @@ function createCenterCard(center) {
 
 // ===== Initialize Map (Google Maps) =====
 let mapInitAttempts = 0;
-const MAX_MAP_INIT_ATTEMPTS = 50; // 5 seconds max
+const MAX_MAP_INIT_ATTEMPTS = 100; // 10 seconds max
 
 function initMap() {
   // Prevent double initialization
@@ -240,20 +240,29 @@ function initMap() {
     return;
   }
 
+  // Show loading state
+  if (mapInitAttempts === 0) {
+    mapContainer.innerHTML = '<div style="display:flex;align-items:center;justify-content:center;height:100%;color:#004B63;padding:2rem;text-align:center;"><div><div style="width:40px;height:40px;border:3px solid #e5e7eb;border-top-color:#004B63;border-radius:50%;animation:spin 1s linear infinite;margin:0 auto 1rem;"></div>Chargement de la carte...</div></div><style>@keyframes spin{to{transform:rotate(360deg)}}</style>';
+  }
+
   // Wait for Google Maps to be available
   if (typeof google === 'undefined' || typeof google.maps === 'undefined') {
     mapInitAttempts++;
     if (mapInitAttempts < MAX_MAP_INIT_ATTEMPTS) {
-      console.log('Waiting for Google Maps API... attempt', mapInitAttempts);
+      if (mapInitAttempts % 20 === 0) {
+        console.log('Waiting for Google Maps API... attempt', mapInitAttempts);
+      }
       setTimeout(initMap, 100);
     } else {
-      console.error('Google Maps API failed to load after 5 seconds');
-      mapContainer.innerHTML = '<div style="display:flex;align-items:center;justify-content:center;height:100%;color:#666;padding:2rem;text-align:center;">Carte indisponible<br><small>Erreur de chargement Google Maps</small></div>';
+      console.error('Google Maps API failed to load after 10 seconds');
+      console.error('Check: 1) API key valid? 2) Domain restrictions? 3) Network issues?');
+      mapContainer.innerHTML = '<div style="display:flex;align-items:center;justify-content:center;height:100%;color:#666;padding:2rem;text-align:center;flex-direction:column;"><svg width="48" height="48" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" style="margin-bottom:1rem;color:#9ca3af;"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"/></svg><span style="font-weight:500;">Carte temporairement indisponible</span><small style="color:#9ca3af;margin-top:0.5rem;">La carte Google Maps n\'a pas pu se charger</small><button onclick="location.reload()" style="margin-top:1rem;padding:0.5rem 1rem;background:#004B63;color:white;border:none;border-radius:8px;cursor:pointer;">Réessayer</button></div>';
     }
     return;
   }
 
   console.log('Google Maps API is available, creating map...');
+  console.log('Google Maps version:', google.maps.version);
 
   try {
     // Create the map
@@ -266,7 +275,10 @@ function initMap() {
           elementType: 'labels',
           stylers: [{ visibility: 'off' }]
         }
-      ]
+      ],
+      mapTypeControl: false,
+      streetViewControl: false,
+      fullscreenControl: true
     });
 
     mapReady = true;
@@ -279,15 +291,27 @@ function initMap() {
     }
   } catch (error) {
     console.error('Error initializing Google Maps:', error);
-    mapContainer.innerHTML = '<div style="display:flex;align-items:center;justify-content:center;height:100%;color:#666;padding:2rem;text-align:center;">Erreur lors du chargement de la carte<br><small>' + error.message + '</small></div>';
+    console.error('Error stack:', error.stack);
+    mapContainer.innerHTML = '<div style="display:flex;align-items:center;justify-content:center;height:100%;color:#666;padding:2rem;text-align:center;flex-direction:column;"><svg width="48" height="48" fill="none" stroke="#dc2626" stroke-width="1.5" viewBox="0 0 24 24" style="margin-bottom:1rem;"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m9-.75a9 9 0 11-18 0 9 9 0 0118 0zm-9 3.75h.008v.008H12v-.008z"/></svg><span style="font-weight:500;color:#dc2626;">Erreur de chargement</span><small style="color:#666;margin-top:0.5rem;">' + escapeHTML(error.message) + '</small><button onclick="location.reload()" style="margin-top:1rem;padding:0.5rem 1rem;background:#004B63;color:white;border:none;border-radius:8px;cursor:pointer;">Réessayer</button></div>';
   }
 }
 
-// Global function for Google Maps callback (backup)
+// Global function for Google Maps callback
 window.initGoogleMap = function() {
-  console.log('Google Maps API loaded via callback');
+  console.log('=== Google Maps API loaded via callback ===');
+  mapInitAttempts = 0; // Reset attempts
   if (!mapReady) {
     initMap();
+  }
+};
+
+// Error handler for Google Maps
+window.gm_authFailure = function() {
+  console.error('=== Google Maps Authentication Failed ===');
+  console.error('Possible causes: Invalid API key, domain not authorized, or billing not enabled');
+  const mapContainer = document.getElementById('map');
+  if (mapContainer) {
+    mapContainer.innerHTML = '<div style="display:flex;align-items:center;justify-content:center;height:100%;color:#666;padding:2rem;text-align:center;flex-direction:column;"><svg width="48" height="48" fill="none" stroke="#dc2626" stroke-width="1.5" viewBox="0 0 24 24" style="margin-bottom:1rem;"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126zM12 15.75h.007v.008H12v-.008z"/></svg><span style="font-weight:500;color:#dc2626;">Erreur d\'authentification</span><small style="color:#666;margin-top:0.5rem;">Clé API Google Maps non valide ou domaine non autorisé</small></div>';
   }
 };
 
