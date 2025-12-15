@@ -282,6 +282,7 @@ a:hover {
   transform: translateX(100%);
   transition: transform var(--transition);
   overflow-y: auto;
+  z-index: 999;
 }
 
 .mobile-nav.active {
