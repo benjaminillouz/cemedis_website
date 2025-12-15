@@ -141,15 +141,21 @@ function createCenterCard(center) {
   const stars = getStarsHTML(rating);
   const phone = center['Tel_app'] || '';
   const doctolib = center['Page Doctolib'] || center['Module RDV Doctolib'] || '';
+  const logo = center['Logo_public_URL'] || '';
+  const googleReview = center['Google Review'] || '';
 
   return `
     <div class="center-card scroll-animate visible">
       <div class="center-header">
-        <h3 class="center-name">${escapeHTML(center['Nom'] || 'Centre CEMEDIS')}</h3>
+        <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 0.75rem;">
+          ${logo ? `<img src="${escapeHTML(logo)}" alt="${escapeHTML(center['Nom'] || 'Centre')}" style="width: 50px; height: 50px; object-fit: contain; border-radius: var(--radius); background: white;">` : ''}
+          <h3 class="center-name" style="margin: 0;">${escapeHTML(center['Nom'] || 'Centre CEMEDIS')}</h3>
+        </div>
         ${rating > 0 ? `
           <div class="center-rating">
             <span class="center-stars">${stars}</span>
             <span class="center-rating-text">${rating.toFixed(1)} (${reviewCount} avis)</span>
+            ${googleReview ? `<a href="${escapeHTML(googleReview)}" target="_blank" rel="noopener" style="margin-left: 0.5rem; font-size: 0.8rem; color: var(--cemedis-primary);">Voir sur Google</a>` : ''}
           </div>
         ` : ''}
       </div>
