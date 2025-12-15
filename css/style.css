@@ -176,7 +176,7 @@ a:hover {
 }
 
 .logo img {
-  height: 66px;
+  height: 73px;
   width: auto;
 }
 
@@ -1313,8 +1313,13 @@ a:hover {
     height: 70px;
   }
 
+  .logo {
+    flex: 1;
+    justify-content: center;
+  }
+
   .logo img {
-    height: 50px;
+    height: 60px;
   }
 
   /* Hero mobile */
