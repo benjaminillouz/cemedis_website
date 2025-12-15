@@ -759,11 +759,13 @@ a:hover {
   border-radius: var(--radius-xl);
   overflow: hidden;
   box-shadow: var(--shadow-lg);
+  background: var(--cemedis-gray-100);
 }
 
 #map {
   width: 100%;
   height: 100%;
+  background: var(--cemedis-gray-100);
 }
 
 .leaflet-popup-content-wrapper {
