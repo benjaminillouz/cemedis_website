@@ -8,6 +8,8 @@ let centers = [];
 let filteredCenters = [];
 let map = null;
 let markers = [];
+let mapReady = false;
+let centersLoaded = false;
 
 // ===== DOM Ready =====
 document.addEventListener('DOMContentLoaded', () => {
@@ -102,9 +104,13 @@ async function loadCenters() {
 
     centers = await response.json();
     filteredCenters = [...centers];
+    centersLoaded = true;
 
     renderCenters();
-    updateMap();
+    // Only update map if Google Maps is ready
+    if (mapReady) {
+      updateMap();
+    }
     updateStats();
 
   } catch (error) {
@@ -223,8 +229,10 @@ window.initGoogleMap = function() {
     ]
   });
 
+  mapReady = true;
+
   // If centers are already loaded, update map
-  if (filteredCenters.length > 0) {
+  if (centersLoaded && filteredCenters.length > 0) {
     updateMap();
   }
 };
