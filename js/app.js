@@ -96,17 +96,33 @@ function initScrollAnimations() {
 
 // ===== Load Centers from API =====
 async function loadCenters() {
+  console.log('Loading centers from API...');
   try {
     showLoading();
 
-    const response = await fetch(API_URL);
-    if (!response.ok) throw new Error('Failed to load centers');
+    const response = await fetch(API_URL, {
+      method: 'GET',
+      headers: {
+        'Accept': 'application/json'
+      }
+    });
 
-    centers = await response.json();
+    console.log('API Response status:', response.status);
+
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+
+    const data = await response.json();
+    console.log('Centers loaded:', data.length, 'centers');
+
+    centers = data;
     filteredCenters = [...centers];
     centersLoaded = true;
 
     renderCenters();
+    console.log('Centers rendered');
+
     // Only update map if Google Maps is ready
     if (mapReady) {
       updateMap();
@@ -115,6 +131,7 @@ async function loadCenters() {
 
   } catch (error) {
     console.error('Error loading centers:', error);
+    console.error('Error details:', error.message);
     showError('Impossible de charger les centres. Veuillez réessayer.');
   }
 }
