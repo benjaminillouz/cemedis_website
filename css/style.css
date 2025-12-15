@@ -7,13 +7,13 @@
   --cemedis-primary-dark: #003A4D;
   --cemedis-primary-light: #006B8F;
 
-  /* Secondary Colors */
-  --cemedis-secondary: #005F7F;
-  --cemedis-secondary-dark: #004A63;
-  --cemedis-secondary-light: #007A9F;
+  /* Secondary Colors - Basées sur #004B63 */
+  --cemedis-secondary: #004B63;
+  --cemedis-secondary-dark: #003A4D;
+  --cemedis-secondary-light: #005A75;
 
   /* Accent Colors */
-  --cemedis-accent: #00A0CC;
+  --cemedis-accent: #004B63;
   --cemedis-urgent: #DC2626;
   --cemedis-urgent-light: #FEE2E2;
 
@@ -32,8 +32,8 @@
   --cemedis-white: #FFFFFF;
 
   /* Gradients */
-  --gradient-primary: linear-gradient(135deg, var(--cemedis-primary) 0%, var(--cemedis-primary-dark) 100%);
-  --gradient-hero: linear-gradient(135deg, #004B63 0%, #003A4D 100%);
+  --gradient-primary: linear-gradient(135deg, #004B63 0%, #003A4D 100%);
+  --gradient-hero: linear-gradient(160deg, #004B63 0%, #003A4D 50%, #002A3D 100%);
   --gradient-card: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.1) 100%);
 
   /* Shadows */
@@ -176,7 +176,7 @@ a:hover {
 }
 
 .logo img {
-  height: 45px;
+  height: 60px;
   width: auto;
 }
 
@@ -930,7 +930,7 @@ a:hover {
 }
 
 .footer-logo img {
-  height: 40px;
+  height: 55px;
 }
 
 .footer-desc {
