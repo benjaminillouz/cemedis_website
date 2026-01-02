@@ -1,0 +1,173 @@
+{
+  "lang": "pl",
+  "dir": "ltr",
+  "meta": {
+    "title": "CEMEDIS - Centra Stomatologiczne i Medyczne w Île-de-France",
+    "description": "CEMEDIS - Sieć centrów stomatologicznych i medycznych w Île-de-France. 25 centrów, wysokiej jakości opieka stomatologiczna, nagłe przypadki. Umów się online."
+  },
+  "nav": {
+    "home": "Strona główna",
+    "centers": "Nasze centra",
+    "services": "Usługi",
+    "reimbursements": "Zwroty",
+    "emergencies": "Nagłe przypadki",
+    "joinUs": "Dołącz do nas",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "badge": "25 centrów w Île-de-France",
+    "title": "Nasz zawód, Twoje zdrowie",
+    "subtitle": "CEMEDIS skupia zespoły pełnych pasji profesjonalistów w 25 centrach stomatologicznych i medycznych. Wysokiej jakości opieka, dostępna dla wszystkich, blisko Ciebie.",
+    "searchPlaceholder": "Wyszukaj centrum według miasta lub adresu...",
+    "searchBtn": "Szukaj",
+    "makeAppointment": "Umów wizytę",
+    "viewCenters": "Zobacz wszystkie centra",
+    "nearestCenter": "Najbliższe centrum"
+  },
+  "stats": {
+    "centers": "Centrów w Île-de-France",
+    "practitioners": "Wykwalifikowanych lekarzy",
+    "patients": "Zadowolonych pacjentów",
+    "emergencies": "Pomoc nagła dostępna"
+  },
+  "services": {
+    "sectionLabel": "Nasze usługi",
+    "title": "Kompleksowa opieka dla całej rodziny",
+    "subtitle": "Od profilaktyki po specjalistyczną opiekę, nasze zespoły towarzyszą Ci na każdym etapie Twojego zdrowia jamy ustnej.",
+    "learnMore": "Dowiedz się więcej",
+    "dentalCare": {
+      "title": "Opieka stomatologiczna",
+      "desc": "Konsultacje, usuwanie kamienia, leczenie próchnicy, leczenie kanałowe i wszystkie powszechne zabiegi stomatologiczne."
+    },
+    "aesthetics": {
+      "title": "Stomatologia estetyczna",
+      "desc": "Wybielanie, licówki, niewidoczne nakładki dla promiennego i harmonijnego uśmiechu."
+    },
+    "implants": {
+      "title": "Implantologia",
+      "desc": "Wszczepienie implantów przez doświadczonych specjalistów dla pełnego uśmiechu."
+    },
+    "pediatrics": {
+      "title": "Stomatologia dziecięca",
+      "desc": "Opieka dostosowana do dzieci w spokojnym i przyjaznym otoczeniu."
+    },
+    "surgery": {
+      "title": "Chirurgia",
+      "desc": "Ekstrakcje, przeszczepy kostne i chirurgia przyzębia przez specjalistów."
+    },
+    "emergency": {
+      "title": "Nagłe przypadki stomatologiczne",
+      "desc": "Szybka pomoc w nagłych przypadkach: ból, urazy, infekcje.",
+      "link": "Dostęp do pomocy nagłej"
+    }
+  },
+  "whyUs": {
+    "sectionLabel": "Dlaczego my",
+    "title": "Doskonałość w służbie Twojego uśmiechu",
+    "subtitle": "Od ponad 20 lat CEMEDIS zobowiązuje się do świadczenia wysokiej jakości opieki w nowoczesnym i przyjaznym otoczeniu.",
+    "certified": {
+      "title": "Certyfikowane zespoły",
+      "desc": "Wszyscy nasi lekarze są wykwalifikowani i regularnie uczestniczą w szkoleniach, aby być na bieżąco z najnowszymi technikami."
+    },
+    "modern": {
+      "title": "Nowoczesny sprzęt",
+      "desc": "Nasze centra są wyposażone w najnowsze technologie: radiologia cyfrowa, skanery 3D, lasery stomatologiczne."
+    },
+    "availability": {
+      "title": "Dostępność",
+      "desc": "Wydłużone godziny pracy, rezerwacja online i pomoc nagła, aby spełnić Twoje potrzeby."
+    }
+  },
+  "payment": {
+    "sectionLabel": "Opcje płatności",
+    "title": "Płać za opiekę w ratach",
+    "subtitle": "Dzięki partnerstwu z Alma, płać za opiekę stomatologiczną w 2, 3 lub 4 ratach bez odsetek. Proste i dostępne rozwiązanie, aby dbać o swój uśmiech bez wpływu na budżet.",
+    "option2x": "2 raty bez odsetek",
+    "option3x": "3 raty bez odsetek",
+    "option4x": "4 raty bez odsetek"
+  },
+  "testimonials": {
+    "sectionLabel": "Opinie",
+    "title": "Co mówią nasi pacjenci",
+    "subtitle": "Tysiące pacjentów ufa nam każdego roku."
+  },
+  "cta": {
+    "title": "Zadbaj o swój uśmiech już dziś",
+    "subtitle": "Znajdź najbliższe centrum CEMEDIS i umów wizytę w kilka kliknięć.",
+    "findCenter": "Znajdź centrum",
+    "contactUs": "Skontaktuj się z nami"
+  },
+  "footer": {
+    "desc": "Sieć centrów stomatologicznych i medycznych w Île-de-France. Wysokiej jakości opieka, dostępna dla wszystkich, blisko Ciebie.",
+    "navigation": "Nawigacja",
+    "servicesTitle": "Usługi",
+    "contactTitle": "Kontakt",
+    "centersCount": "25 centrów w Île-de-France",
+    "copyright": "© 2024 CEMEDIS. Wszelkie prawa zastrzeżone.",
+    "privacy": "Polityka prywatności",
+    "legal": "Nota prawna",
+    "myReimbursements": "Moje zwroty"
+  },
+  "emergencies": {
+    "title": "Nagłe przypadki stomatologiczne",
+    "subtitle": "Ból zęba, urazy, infekcje... Nasze centra przyjmują Cię w celu szybkiej pomocy.",
+    "available": "Dostępne 24/7",
+    "call": "Zadzwoń teraz",
+    "findCenter": "Znajdź centrum nagłej pomocy"
+  },
+  "contact": {
+    "title": "Skontaktuj się z nami",
+    "subtitle": "Masz pytanie? Nie wahaj się z nami skontaktować.",
+    "name": "Imię",
+    "email": "E-mail",
+    "phone": "Telefon",
+    "message": "Wiadomość",
+    "send": "Wyślij",
+    "success": "Twoja wiadomość została wysłana pomyślnie.",
+    "error": "Wystąpił błąd. Spróbuj ponownie."
+  },
+  "joinUs": {
+    "title": "Dołącz do naszych zespołów",
+    "subtitle": "Jesteś profesjonalistą medycznym? Dołącz do sieci CEMEDIS.",
+    "viewOffer": "Zobacz ofertę",
+    "vacations": "Dostępne dyżury",
+    "dentist": "Stomatolog",
+    "assistant": "Asystent stomatologiczny",
+    "secretary": "Sekretarka medyczna"
+  },
+  "reimbursements": {
+    "title": "Moje zwroty",
+    "subtitle": "Wszystko, co musisz wiedzieć o zwrotach za protezy dentystyczne",
+    "hundredPercent": "100% Zdrowie",
+    "controlled": "Kontrolowane ceny",
+    "free": "Wolne ceny"
+  },
+  "common": {
+    "backHome": "Powrót do strony głównej",
+    "seeOurCenters": "Zobacz nasze centra",
+    "dentalCare": "Opieka stomatologiczna",
+    "aesthetics": "Estetyka",
+    "implantology": "Implantologia",
+    "pediatrics": "Stomatologia dziecięca"
+  },
+  "success": {
+    "title": "Płatność zaakceptowana",
+    "message": "Twoja płatność została zrealizowana pomyślnie. Dziękujemy za zaufanie. E-mail z potwierdzeniem zostanie wkrótce wysłany."
+  },
+  "denied": {
+    "title": "Płatność odrzucona",
+    "message": "Nie udało się przetworzyć Twojej płatności. Sprawdź dane bankowe i spróbuj ponownie. Jeśli problem będzie się powtarzał, skontaktuj się ze swoim bankiem lub naszym zespołem."
+  },
+  "language": {
+    "select": "Język",
+    "fr": "Français",
+    "en": "English",
+    "es": "Español",
+    "pt": "Português",
+    "ar": "العربية",
+    "zh": "中文",
+    "sr": "Српски",
+    "pl": "Polski",
+    "de": "Deutsch"
+  }
+}

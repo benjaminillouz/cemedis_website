@@ -1586,3 +1586,274 @@ a:hover {
     font-size: 0.85rem;
   }
 }
+
+/* ===== Language Selector ===== */
+.language-selector {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-left: 1rem;
+}
+
+.language-selector select {
+  appearance: none;
+  background: transparent;
+  border: 1px solid var(--cemedis-gray-300);
+  border-radius: var(--radius);
+  padding: 0.5rem 2rem 0.5rem 0.75rem;
+  font-size: 0.875rem;
+  color: var(--cemedis-gray-700);
+  cursor: pointer;
+  transition: var(--transition-fast);
+}
+
+.language-selector select:hover {
+  border-color: var(--cemedis-primary);
+}
+
+.language-selector select:focus {
+  outline: none;
+  border-color: var(--cemedis-primary);
+  box-shadow: 0 0 0 3px rgba(0, 75, 99, 0.1);
+}
+
+.language-selector::after {
+  content: '';
+  position: absolute;
+  right: 0.75rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 4px solid var(--cemedis-gray-500);
+  pointer-events: none;
+}
+
+.language-selector-mobile {
+  display: none;
+  width: 100%;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--cemedis-gray-200);
+}
+
+.language-selector-mobile select {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  background: var(--cemedis-gray-50);
+  border: 1px solid var(--cemedis-gray-300);
+  border-radius: var(--radius);
+}
+
+@media (max-width: 1024px) {
+  .language-selector {
+    display: none;
+  }
+
+  .language-selector-mobile {
+    display: block;
+  }
+}
+
+/* ===== RTL Support (Arabic) ===== */
+html[dir="rtl"] {
+  direction: rtl;
+}
+
+body.rtl {
+  text-align: right;
+}
+
+/* RTL Header & Navigation */
+body.rtl .header-inner {
+  flex-direction: row-reverse;
+}
+
+body.rtl .nav {
+  flex-direction: row-reverse;
+}
+
+body.rtl .nav-cta {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+body.rtl .language-selector {
+  margin-left: 0;
+  margin-right: 1rem;
+}
+
+body.rtl .language-selector::after {
+  right: auto;
+  left: 0.75rem;
+}
+
+body.rtl .language-selector select {
+  padding: 0.5rem 0.75rem 0.5rem 2rem;
+}
+
+/* RTL Hero */
+body.rtl .hero-content {
+  text-align: right;
+}
+
+body.rtl .hero-badge {
+  flex-direction: row-reverse;
+}
+
+body.rtl .hero-search {
+  flex-direction: row-reverse;
+}
+
+body.rtl .hero-search input {
+  text-align: right;
+}
+
+body.rtl .hero-actions {
+  flex-direction: row-reverse;
+}
+
+/* RTL Buttons */
+body.rtl .btn svg {
+  margin-left: 0.5rem;
+  margin-right: 0;
+}
+
+body.rtl .btn svg:first-child {
+  margin-left: 0.5rem;
+  margin-right: 0;
+}
+
+/* RTL Stats */
+body.rtl .stats-grid {
+  direction: rtl;
+}
+
+/* RTL Cards */
+body.rtl .service-card,
+body.rtl .center-card,
+body.rtl .testimonial-card {
+  text-align: right;
+}
+
+body.rtl .service-link {
+  flex-direction: row-reverse;
+}
+
+body.rtl .service-link svg {
+  transform: rotate(180deg);
+}
+
+/* RTL Footer */
+body.rtl .footer-grid {
+  direction: rtl;
+}
+
+body.rtl .footer-brand {
+  text-align: right;
+}
+
+body.rtl .footer-social {
+  justify-content: flex-start;
+}
+
+body.rtl .footer-links {
+  text-align: right;
+}
+
+body.rtl .footer-contact-item {
+  flex-direction: row-reverse;
+}
+
+body.rtl .footer-contact-item svg {
+  margin-right: 0;
+  margin-left: 0.75rem;
+}
+
+body.rtl .footer-bottom {
+  flex-direction: row-reverse;
+}
+
+body.rtl .footer-legal {
+  flex-direction: row-reverse;
+}
+
+/* RTL Forms */
+body.rtl input,
+body.rtl textarea,
+body.rtl select {
+  text-align: right;
+}
+
+body.rtl .form-group label {
+  text-align: right;
+}
+
+/* RTL Tables */
+body.rtl table {
+  direction: rtl;
+}
+
+body.rtl th,
+body.rtl td {
+  text-align: right;
+}
+
+/* RTL Mobile Navigation */
+body.rtl .mobile-nav {
+  text-align: right;
+}
+
+body.rtl .mobile-menu-btn {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+/* RTL Center Card */
+body.rtl .center-card-body {
+  text-align: right;
+}
+
+body.rtl .center-card-meta {
+  flex-direction: row-reverse;
+}
+
+body.rtl .center-card-meta svg {
+  margin-right: 0;
+  margin-left: 0.25rem;
+}
+
+/* RTL Job Cards */
+body.rtl .job-card {
+  text-align: right;
+}
+
+/* RTL Flex utilities */
+body.rtl .flex-row {
+  flex-direction: row-reverse;
+}
+
+/* RTL Margins and Paddings */
+body.rtl .ml-auto {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+body.rtl .mr-auto {
+  margin-right: 0;
+  margin-left: auto;
+}
+
+/* RTL List styling */
+body.rtl ul,
+body.rtl ol {
+  padding-left: 0;
+  padding-right: 1.5rem;
+}
+
+body.rtl li::marker {
+  unicode-bidi: embed;
+}

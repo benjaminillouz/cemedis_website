@@ -1,0 +1,173 @@
+{
+  "lang": "fr",
+  "dir": "ltr",
+  "meta": {
+    "title": "CEMEDIS - Centres Dentaires & Médicaux en Île-de-France",
+    "description": "CEMEDIS - Réseau de centres dentaires et médicaux en Île-de-France. 25 centres, soins dentaires de qualité, urgences dentaires. Prenez rendez-vous en ligne."
+  },
+  "nav": {
+    "home": "Accueil",
+    "centers": "Nos Centres",
+    "services": "Services",
+    "reimbursements": "Remboursements",
+    "emergencies": "Urgences",
+    "joinUs": "Nous Rejoindre",
+    "contact": "Contact"
+  },
+  "hero": {
+    "badge": "25 centres en Île-de-France",
+    "title": "Notre métier, Votre santé",
+    "subtitle": "CEMEDIS réunit des équipes de professionnels passionnés dans 25 centres dentaires et médicaux. Des soins de qualité, accessibles à tous, près de chez vous.",
+    "searchPlaceholder": "Rechercher un centre par ville ou adresse...",
+    "searchBtn": "Rechercher",
+    "makeAppointment": "Prendre rendez-vous",
+    "viewCenters": "Voir tous les centres",
+    "nearestCenter": "Centre le plus proche"
+  },
+  "stats": {
+    "centers": "Centres en Île-de-France",
+    "practitioners": "Praticiens qualifiés",
+    "patients": "Patients satisfaits",
+    "emergencies": "Urgences disponibles"
+  },
+  "services": {
+    "sectionLabel": "Nos Services",
+    "title": "Des soins complets pour toute la famille",
+    "subtitle": "De la prévention aux soins spécialisés, nos équipes vous accompagnent à chaque étape de votre parcours de santé bucco-dentaire.",
+    "learnMore": "En savoir plus",
+    "dentalCare": {
+      "title": "Soins Dentaires",
+      "desc": "Consultations, détartrage, traitement des caries, dévitalisation et tous les soins dentaires courants."
+    },
+    "aesthetics": {
+      "title": "Esthétique Dentaire",
+      "desc": "Blanchiment, facettes, aligneurs invisibles pour un sourire éclatant et harmonieux."
+    },
+    "implants": {
+      "title": "Implantologie",
+      "desc": "Pose d'implants dentaires par des spécialistes expérimentés pour retrouver un sourire complet."
+    },
+    "pediatrics": {
+      "title": "Pédodontie",
+      "desc": "Soins adaptés aux enfants dans un environnement rassurant et bienveillant."
+    },
+    "surgery": {
+      "title": "Chirurgie",
+      "desc": "Extractions, greffes osseuses et chirurgie parodontale par des praticiens spécialisés."
+    },
+    "emergency": {
+      "title": "Urgences Dentaires",
+      "desc": "Prise en charge rapide des urgences : douleurs, traumatismes, infections.",
+      "link": "Accès urgences"
+    }
+  },
+  "whyUs": {
+    "sectionLabel": "Pourquoi nous choisir",
+    "title": "L'excellence au service de votre sourire",
+    "subtitle": "Depuis plus de 20 ans, CEMEDIS s'engage à offrir des soins de qualité dans un environnement moderne et accueillant.",
+    "certified": {
+      "title": "Équipes Certifiées",
+      "desc": "Tous nos praticiens sont diplômés et suivent régulièrement des formations pour rester à la pointe des techniques."
+    },
+    "modern": {
+      "title": "Équipements Modernes",
+      "desc": "Nos centres sont équipés des dernières technologies : radiologie numérique, scanners 3D, lasers dentaires."
+    },
+    "availability": {
+      "title": "Disponibilité",
+      "desc": "Horaires étendus, prise de rendez-vous en ligne et service d'urgence pour répondre à vos besoins."
+    }
+  },
+  "payment": {
+    "sectionLabel": "Facilités de paiement",
+    "title": "Payez vos soins en plusieurs fois",
+    "subtitle": "Grâce à notre partenariat avec Alma, réglez vos soins dentaires en 2x, 3x ou 4x sans frais. Une solution simple et accessible pour prendre soin de votre sourire sans impacter votre budget.",
+    "option2x": "2x sans frais",
+    "option3x": "3x sans frais",
+    "option4x": "4x sans frais"
+  },
+  "testimonials": {
+    "sectionLabel": "Témoignages",
+    "title": "Ce que disent nos patients",
+    "subtitle": "Des milliers de patients nous font confiance chaque année."
+  },
+  "cta": {
+    "title": "Prenez soin de votre sourire dès aujourd'hui",
+    "subtitle": "Trouvez le centre CEMEDIS le plus proche et prenez rendez-vous en quelques clics.",
+    "findCenter": "Trouver un centre",
+    "contactUs": "Nous contacter"
+  },
+  "footer": {
+    "desc": "Réseau de centres dentaires et médicaux en Île-de-France. Des soins de qualité, accessibles à tous, près de chez vous.",
+    "navigation": "Navigation",
+    "servicesTitle": "Services",
+    "contactTitle": "Contact",
+    "centersCount": "25 centres en Île-de-France",
+    "copyright": "© 2024 CEMEDIS. Tous droits réservés.",
+    "privacy": "Politique de confidentialité",
+    "legal": "Mentions légales",
+    "myReimbursements": "Mes Remboursements"
+  },
+  "emergencies": {
+    "title": "Urgences Dentaires",
+    "subtitle": "Douleurs dentaires, traumatismes, infections... Nos centres vous accueillent pour une prise en charge rapide.",
+    "available": "Disponible 24h/24 et 7j/7",
+    "call": "Appelez maintenant",
+    "findCenter": "Trouver un centre d'urgence"
+  },
+  "contact": {
+    "title": "Contactez-nous",
+    "subtitle": "Une question ? N'hésitez pas à nous contacter.",
+    "name": "Nom",
+    "email": "Email",
+    "phone": "Téléphone",
+    "message": "Message",
+    "send": "Envoyer",
+    "success": "Votre message a été envoyé avec succès.",
+    "error": "Une erreur est survenue. Veuillez réessayer."
+  },
+  "joinUs": {
+    "title": "Rejoignez nos équipes",
+    "subtitle": "Vous êtes un professionnel de santé ? Rejoignez le réseau CEMEDIS.",
+    "viewOffer": "Voir l'offre",
+    "vacations": "Vacations disponibles",
+    "dentist": "Chirurgien-Dentiste",
+    "assistant": "Assistante Dentaire",
+    "secretary": "Secrétaire Médicale"
+  },
+  "reimbursements": {
+    "title": "Mes Remboursements",
+    "subtitle": "Tout savoir sur le remboursement de vos prothèses dentaires",
+    "hundredPercent": "100% Santé",
+    "controlled": "Tarifs maîtrisés",
+    "free": "Tarifs libres"
+  },
+  "common": {
+    "backHome": "Retour à l'accueil",
+    "seeOurCenters": "Voir nos centres",
+    "dentalCare": "Soins Dentaires",
+    "aesthetics": "Esthétique",
+    "implantology": "Implantologie",
+    "pediatrics": "Pédodontie"
+  },
+  "success": {
+    "title": "Paiement Accepté",
+    "message": "Votre paiement a été effectué avec succès. Merci pour votre confiance. Un email de confirmation vous sera envoyé prochainement."
+  },
+  "denied": {
+    "title": "Paiement Refusé",
+    "message": "Votre paiement n'a pas pu être effectué. Veuillez vérifier vos informations bancaires et réessayer. Si le problème persiste, contactez votre banque ou notre équipe."
+  },
+  "language": {
+    "select": "Langue",
+    "fr": "Français",
+    "en": "English",
+    "es": "Español",
+    "pt": "Português",
+    "ar": "العربية",
+    "zh": "中文",
+    "sr": "Српски",
+    "pl": "Polski",
+    "de": "Deutsch"
+  }
+}

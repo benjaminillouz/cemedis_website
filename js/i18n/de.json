@@ -1,0 +1,173 @@
+{
+  "lang": "de",
+  "dir": "ltr",
+  "meta": {
+    "title": "CEMEDIS - Zahnarzt- und Medizinzentren in Île-de-France",
+    "description": "CEMEDIS - Netzwerk von Zahnarzt- und Medizinzentren in Île-de-France. 25 Zentren, hochwertige Zahnpflege, Zahnnotfälle. Online buchen."
+  },
+  "nav": {
+    "home": "Startseite",
+    "centers": "Unsere Zentren",
+    "services": "Leistungen",
+    "reimbursements": "Erstattungen",
+    "emergencies": "Notfälle",
+    "joinUs": "Karriere",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "badge": "25 Zentren in Île-de-France",
+    "title": "Unser Beruf, Ihre Gesundheit",
+    "subtitle": "CEMEDIS vereint Teams von leidenschaftlichen Fachleuten in 25 Zahnarzt- und Medizinzentren. Hochwertige Pflege, für alle zugänglich, in Ihrer Nähe.",
+    "searchPlaceholder": "Suchen Sie ein Zentrum nach Stadt oder Adresse...",
+    "searchBtn": "Suchen",
+    "makeAppointment": "Termin vereinbaren",
+    "viewCenters": "Alle Zentren anzeigen",
+    "nearestCenter": "Nächstes Zentrum"
+  },
+  "stats": {
+    "centers": "Zentren in Île-de-France",
+    "practitioners": "Qualifizierte Ärzte",
+    "patients": "Zufriedene Patienten",
+    "emergencies": "Notdienst verfügbar"
+  },
+  "services": {
+    "sectionLabel": "Unsere Leistungen",
+    "title": "Umfassende Versorgung für die ganze Familie",
+    "subtitle": "Von der Vorsorge bis zur Fachbehandlung begleiten Sie unsere Teams bei jedem Schritt Ihrer Mundgesundheit.",
+    "learnMore": "Mehr erfahren",
+    "dentalCare": {
+      "title": "Zahnpflege",
+      "desc": "Beratungen, Zahnsteinentfernung, Kariesbehandlung, Wurzelbehandlung und alle gängigen Zahnbehandlungen."
+    },
+    "aesthetics": {
+      "title": "Ästhetische Zahnheilkunde",
+      "desc": "Bleaching, Veneers, unsichtbare Aligner für ein strahlendes und harmonisches Lächeln."
+    },
+    "implants": {
+      "title": "Implantologie",
+      "desc": "Zahnimplantate durch erfahrene Spezialisten für ein vollständiges Lächeln."
+    },
+    "pediatrics": {
+      "title": "Kinderzahnheilkunde",
+      "desc": "Kindgerechte Behandlung in einer beruhigenden und freundlichen Umgebung."
+    },
+    "surgery": {
+      "title": "Chirurgie",
+      "desc": "Extraktionen, Knochentransplantate und Parodontalchirurgie durch Fachärzte."
+    },
+    "emergency": {
+      "title": "Zahnnotfälle",
+      "desc": "Schnelle Hilfe bei Notfällen: Schmerzen, Verletzungen, Infektionen.",
+      "link": "Notfallzugang"
+    }
+  },
+  "whyUs": {
+    "sectionLabel": "Warum wir",
+    "title": "Exzellenz im Dienst Ihres Lächelns",
+    "subtitle": "Seit über 20 Jahren verpflichtet sich CEMEDIS, hochwertige Pflege in einer modernen und einladenden Umgebung zu bieten.",
+    "certified": {
+      "title": "Zertifizierte Teams",
+      "desc": "Alle unsere Ärzte sind qualifiziert und nehmen regelmäßig an Schulungen teil, um auf dem neuesten Stand der Technik zu bleiben."
+    },
+    "modern": {
+      "title": "Moderne Ausstattung",
+      "desc": "Unsere Zentren sind mit den neuesten Technologien ausgestattet: digitale Radiologie, 3D-Scanner, Dentallaser."
+    },
+    "availability": {
+      "title": "Verfügbarkeit",
+      "desc": "Erweiterte Öffnungszeiten, Online-Buchung und Notdienst für Ihre Bedürfnisse."
+    }
+  },
+  "payment": {
+    "sectionLabel": "Zahlungsmöglichkeiten",
+    "title": "Bezahlen Sie Ihre Behandlung in Raten",
+    "subtitle": "Dank unserer Partnerschaft mit Alma können Sie Ihre Zahnbehandlung in 2, 3 oder 4 zinsfreien Raten bezahlen. Eine einfache und zugängliche Lösung, um sich um Ihr Lächeln zu kümmern, ohne Ihr Budget zu belasten.",
+    "option2x": "2 Raten zinsfrei",
+    "option3x": "3 Raten zinsfrei",
+    "option4x": "4 Raten zinsfrei"
+  },
+  "testimonials": {
+    "sectionLabel": "Bewertungen",
+    "title": "Was unsere Patienten sagen",
+    "subtitle": "Tausende von Patienten vertrauen uns jedes Jahr."
+  },
+  "cta": {
+    "title": "Kümmern Sie sich heute um Ihr Lächeln",
+    "subtitle": "Finden Sie das nächste CEMEDIS-Zentrum und buchen Sie einen Termin mit wenigen Klicks.",
+    "findCenter": "Zentrum finden",
+    "contactUs": "Kontaktieren Sie uns"
+  },
+  "footer": {
+    "desc": "Netzwerk von Zahnarzt- und Medizinzentren in Île-de-France. Hochwertige Pflege, für alle zugänglich, in Ihrer Nähe.",
+    "navigation": "Navigation",
+    "servicesTitle": "Leistungen",
+    "contactTitle": "Kontakt",
+    "centersCount": "25 Zentren in Île-de-France",
+    "copyright": "© 2024 CEMEDIS. Alle Rechte vorbehalten.",
+    "privacy": "Datenschutzrichtlinie",
+    "legal": "Impressum",
+    "myReimbursements": "Meine Erstattungen"
+  },
+  "emergencies": {
+    "title": "Zahnnotfälle",
+    "subtitle": "Zahnschmerzen, Verletzungen, Infektionen... Unsere Zentren empfangen Sie für schnelle Hilfe.",
+    "available": "24/7 verfügbar",
+    "call": "Jetzt anrufen",
+    "findCenter": "Notfallzentrum finden"
+  },
+  "contact": {
+    "title": "Kontaktieren Sie uns",
+    "subtitle": "Haben Sie eine Frage? Zögern Sie nicht, uns zu kontaktieren.",
+    "name": "Name",
+    "email": "E-Mail",
+    "phone": "Telefon",
+    "message": "Nachricht",
+    "send": "Senden",
+    "success": "Ihre Nachricht wurde erfolgreich gesendet.",
+    "error": "Ein Fehler ist aufgetreten. Bitte versuchen Sie es erneut."
+  },
+  "joinUs": {
+    "title": "Werden Sie Teil unseres Teams",
+    "subtitle": "Sind Sie ein Gesundheitsfachmann? Werden Sie Teil des CEMEDIS-Netzwerks.",
+    "viewOffer": "Angebot ansehen",
+    "vacations": "Verfügbare Schichten",
+    "dentist": "Zahnarzt",
+    "assistant": "Zahnarzthelfer/in",
+    "secretary": "Medizinische/r Sekretär/in"
+  },
+  "reimbursements": {
+    "title": "Meine Erstattungen",
+    "subtitle": "Alles, was Sie über die Erstattung von Zahnprothesen wissen müssen",
+    "hundredPercent": "100% Gesundheit",
+    "controlled": "Kontrollierte Preise",
+    "free": "Freie Preise"
+  },
+  "common": {
+    "backHome": "Zurück zur Startseite",
+    "seeOurCenters": "Unsere Zentren ansehen",
+    "dentalCare": "Zahnpflege",
+    "aesthetics": "Ästhetik",
+    "implantology": "Implantologie",
+    "pediatrics": "Kinderzahnheilkunde"
+  },
+  "success": {
+    "title": "Zahlung akzeptiert",
+    "message": "Ihre Zahlung wurde erfolgreich durchgeführt. Vielen Dank für Ihr Vertrauen. Eine Bestätigungs-E-Mail wird Ihnen in Kürze zugesandt."
+  },
+  "denied": {
+    "title": "Zahlung abgelehnt",
+    "message": "Ihre Zahlung konnte nicht verarbeitet werden. Bitte überprüfen Sie Ihre Bankdaten und versuchen Sie es erneut. Wenn das Problem weiterhin besteht, wenden Sie sich an Ihre Bank oder unser Team."
+  },
+  "language": {
+    "select": "Sprache",
+    "fr": "Français",
+    "en": "English",
+    "es": "Español",
+    "pt": "Português",
+    "ar": "العربية",
+    "zh": "中文",
+    "sr": "Српски",
+    "pl": "Polski",
+    "de": "Deutsch"
+  }
+}

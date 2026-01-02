@@ -1,0 +1,173 @@
+{
+  "lang": "es",
+  "dir": "ltr",
+  "meta": {
+    "title": "CEMEDIS - Centros Dentales y Médicos en Île-de-France",
+    "description": "CEMEDIS - Red de centros dentales y médicos en Île-de-France. 25 centros, atención dental de calidad, urgencias dentales. Reserve en línea."
+  },
+  "nav": {
+    "home": "Inicio",
+    "centers": "Nuestros Centros",
+    "services": "Servicios",
+    "reimbursements": "Reembolsos",
+    "emergencies": "Urgencias",
+    "joinUs": "Únase a Nosotros",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "badge": "25 centros en Île-de-France",
+    "title": "Nuestra profesión, Su salud",
+    "subtitle": "CEMEDIS reúne equipos de profesionales apasionados en 25 centros dentales y médicos. Atención de calidad, accesible para todos, cerca de usted.",
+    "searchPlaceholder": "Buscar un centro por ciudad o dirección...",
+    "searchBtn": "Buscar",
+    "makeAppointment": "Pedir cita",
+    "viewCenters": "Ver todos los centros",
+    "nearestCenter": "Centro más cercano"
+  },
+  "stats": {
+    "centers": "Centros en Île-de-France",
+    "practitioners": "Profesionales cualificados",
+    "patients": "Pacientes satisfechos",
+    "emergencies": "Urgencias disponibles"
+  },
+  "services": {
+    "sectionLabel": "Nuestros Servicios",
+    "title": "Atención completa para toda la familia",
+    "subtitle": "Desde la prevención hasta la atención especializada, nuestros equipos le acompañan en cada etapa de su salud bucal.",
+    "learnMore": "Más información",
+    "dentalCare": {
+      "title": "Cuidados Dentales",
+      "desc": "Consultas, limpieza, tratamiento de caries, endodoncia y todos los cuidados dentales habituales."
+    },
+    "aesthetics": {
+      "title": "Estética Dental",
+      "desc": "Blanqueamiento, carillas, alineadores invisibles para una sonrisa radiante y armoniosa."
+    },
+    "implants": {
+      "title": "Implantología",
+      "desc": "Colocación de implantes dentales por especialistas experimentados para recuperar una sonrisa completa."
+    },
+    "pediatrics": {
+      "title": "Odontopediatría",
+      "desc": "Cuidados adaptados a los niños en un ambiente tranquilizador y acogedor."
+    },
+    "surgery": {
+      "title": "Cirugía",
+      "desc": "Extracciones, injertos óseos y cirugía periodontal por profesionales especializados."
+    },
+    "emergency": {
+      "title": "Urgencias Dentales",
+      "desc": "Atención rápida de urgencias: dolores, traumatismos, infecciones.",
+      "link": "Acceso urgencias"
+    }
+  },
+  "whyUs": {
+    "sectionLabel": "Por qué elegirnos",
+    "title": "La excelencia al servicio de su sonrisa",
+    "subtitle": "Durante más de 20 años, CEMEDIS se compromete a ofrecer atención de calidad en un entorno moderno y acogedor.",
+    "certified": {
+      "title": "Equipos Certificados",
+      "desc": "Todos nuestros profesionales están cualificados y asisten regularmente a formaciones para estar a la vanguardia de las técnicas."
+    },
+    "modern": {
+      "title": "Equipos Modernos",
+      "desc": "Nuestros centros están equipados con las últimas tecnologías: radiología digital, escáneres 3D, láseres dentales."
+    },
+    "availability": {
+      "title": "Disponibilidad",
+      "desc": "Horarios extendidos, reserva en línea y servicio de urgencias para satisfacer sus necesidades."
+    }
+  },
+  "payment": {
+    "sectionLabel": "Opciones de pago",
+    "title": "Pague sus tratamientos en cuotas",
+    "subtitle": "Gracias a nuestra asociación con Alma, pague sus cuidados dentales en 2, 3 o 4 cuotas sin intereses. Una solución simple y accesible para cuidar su sonrisa sin afectar su presupuesto.",
+    "option2x": "2x sin intereses",
+    "option3x": "3x sin intereses",
+    "option4x": "4x sin intereses"
+  },
+  "testimonials": {
+    "sectionLabel": "Testimonios",
+    "title": "Lo que dicen nuestros pacientes",
+    "subtitle": "Miles de pacientes confían en nosotros cada año."
+  },
+  "cta": {
+    "title": "Cuide su sonrisa hoy",
+    "subtitle": "Encuentre el centro CEMEDIS más cercano y reserve una cita en unos clics.",
+    "findCenter": "Encontrar un centro",
+    "contactUs": "Contáctenos"
+  },
+  "footer": {
+    "desc": "Red de centros dentales y médicos en Île-de-France. Atención de calidad, accesible para todos, cerca de usted.",
+    "navigation": "Navegación",
+    "servicesTitle": "Servicios",
+    "contactTitle": "Contacto",
+    "centersCount": "25 centros en Île-de-France",
+    "copyright": "© 2024 CEMEDIS. Todos los derechos reservados.",
+    "privacy": "Política de Privacidad",
+    "legal": "Aviso Legal",
+    "myReimbursements": "Mis Reembolsos"
+  },
+  "emergencies": {
+    "title": "Urgencias Dentales",
+    "subtitle": "Dolor dental, traumatismos, infecciones... Nuestros centros le reciben para una atención rápida.",
+    "available": "Disponible 24/7",
+    "call": "Llame ahora",
+    "findCenter": "Encontrar un centro de urgencias"
+  },
+  "contact": {
+    "title": "Contáctenos",
+    "subtitle": "¿Tiene alguna pregunta? No dude en contactarnos.",
+    "name": "Nombre",
+    "email": "Correo electrónico",
+    "phone": "Teléfono",
+    "message": "Mensaje",
+    "send": "Enviar",
+    "success": "Su mensaje ha sido enviado con éxito.",
+    "error": "Se produjo un error. Por favor, inténtelo de nuevo."
+  },
+  "joinUs": {
+    "title": "Únase a nuestros equipos",
+    "subtitle": "¿Es usted un profesional de la salud? Únase a la red CEMEDIS.",
+    "viewOffer": "Ver oferta",
+    "vacations": "Turnos disponibles",
+    "dentist": "Cirujano Dentista",
+    "assistant": "Asistente Dental",
+    "secretary": "Secretaria Médica"
+  },
+  "reimbursements": {
+    "title": "Mis Reembolsos",
+    "subtitle": "Todo lo que necesita saber sobre el reembolso de prótesis dentales",
+    "hundredPercent": "100% Salud",
+    "controlled": "Tarifas controladas",
+    "free": "Tarifas libres"
+  },
+  "common": {
+    "backHome": "Volver al inicio",
+    "seeOurCenters": "Ver nuestros centros",
+    "dentalCare": "Cuidados Dentales",
+    "aesthetics": "Estética",
+    "implantology": "Implantología",
+    "pediatrics": "Odontopediatría"
+  },
+  "success": {
+    "title": "Pago Aceptado",
+    "message": "Su pago se ha realizado con éxito. Gracias por su confianza. Recibirá un correo de confirmación próximamente."
+  },
+  "denied": {
+    "title": "Pago Rechazado",
+    "message": "No se pudo procesar su pago. Por favor, verifique sus datos bancarios e inténtelo de nuevo. Si el problema persiste, contacte a su banco o a nuestro equipo."
+  },
+  "language": {
+    "select": "Idioma",
+    "fr": "Français",
+    "en": "English",
+    "es": "Español",
+    "pt": "Português",
+    "ar": "العربية",
+    "zh": "中文",
+    "sr": "Српски",
+    "pl": "Polski",
+    "de": "Deutsch"
+  }
+}
