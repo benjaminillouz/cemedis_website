@@ -17,16 +17,17 @@
   "hero": {
     "badge": "法兰西岛25个中心",
     "title": "我们的专业，您的健康",
-    "subtitle": "CEMEDIS汇集了25个牙科和医疗中心的专业团队。优质护理，人人可及，就在您身边。",
+    "subtitle": "CEMEDIS汇集了25个牙科和医疗中心充满热情的专业团队。优质护理，人人可及，就在您身边。",
     "searchPlaceholder": "按城市或地址搜索中心...",
     "searchBtn": "搜索",
     "makeAppointment": "预约",
     "viewCenters": "查看所有中心",
-    "nearestCenter": "最近的中心"
+    "nearestCenter": "最近的中心",
+    "imageAlt": "CEMEDIS医疗团队"
   },
   "stats": {
     "centers": "法兰西岛中心",
-    "practitioners": "资深医师",
+    "practitioners": "专业医师",
     "patients": "满意患者",
     "emergencies": "急诊服务"
   },
@@ -63,10 +64,10 @@
   },
   "whyUs": {
     "sectionLabel": "为什么选择我们",
-    "title": "卓越服务，为您的笑容",
+    "title": "卓越服务，守护您的笑容",
     "subtitle": "20多年来，CEMEDIS致力于在现代温馨的环境中提供优质护理。",
     "certified": {
-      "title": "认证团队",
+      "title": "持证团队",
       "desc": "我们所有的医师都持有资质，并定期参加培训以保持技术领先。"
     },
     "modern": {
@@ -74,7 +75,7 @@
       "desc": "我们的中心配备最新技术：数字放射、3D扫描仪、牙科激光。"
     },
     "availability": {
-      "title": "便捷服务",
+      "title": "灵活预约",
       "desc": "延长营业时间、在线预约和急诊服务，满足您的需求。"
     }
   },
@@ -84,12 +85,28 @@
     "subtitle": "通过与Alma的合作，您可以分2、3或4期免息支付牙科护理费用。一个简单易用的解决方案，让您在不影响预算的情况下照顾您的笑容。",
     "option2x": "2期免息",
     "option3x": "3期免息",
-    "option4x": "4期免息"
+    "option4x": "4期免息",
+    "imageAlt": "Alma分期付款 - 2期 3期 4期免息"
   },
   "testimonials": {
-    "sectionLabel": "患者评价",
-    "title": "患者们的评价",
-    "subtitle": "每年成千上万的患者信任我们。"
+    "sectionLabel": "患者心声",
+    "title": "患者心声",
+    "subtitle": "每年成千上万的患者信任我们。",
+    "review1": {
+      "text": "牙科急诊处理非常出色。团队专业且让人安心。强烈推荐！",
+      "name": "王女士",
+      "source": "Google评价"
+    },
+    "review2": {
+      "text": "诊所现代整洁。我的牙医会耐心解释每一个治疗步骤。对治疗效果非常满意。",
+      "name": "李先生",
+      "source": "Google评价"
+    },
+    "review3": {
+      "text": "三年来一直带孩子来这里看牙。团队对孩子们非常有耐心和温柔。他们现在不再害怕看牙医了！",
+      "name": "张女士",
+      "source": "Google评价"
+    }
   },
   "cta": {
     "title": "今天就呵护您的笑容",
@@ -160,6 +177,7 @@
   },
   "language": {
     "select": "语言",
+    "selectLabel": "选择语言",
     "fr": "Français",
     "en": "English",
     "es": "Español",
@@ -169,5 +187,11 @@
     "sr": "Српски",
     "pl": "Polski",
     "de": "Deutsch"
+  },
+  "accessibility": {
+    "menu": "菜单",
+    "facebook": "Facebook",
+    "instagram": "Instagram",
+    "linkedin": "LinkedIn"
   }
 }

@@ -129,6 +129,30 @@ const I18n = {
       }
     });
 
+    // Update elements with data-i18n-alt attribute (for images)
+    document.querySelectorAll('[data-i18n-alt]').forEach(element => {
+      const key = element.getAttribute('data-i18n-alt');
+      const value = this.getNestedValue(translations, key);
+      if (value) {
+        element.alt = value;
+      }
+    });
+
+    // Update elements with data-i18n-avatar attribute (creates initials from name)
+    document.querySelectorAll('[data-i18n-avatar]').forEach(element => {
+      const key = element.getAttribute('data-i18n-avatar');
+      const name = this.getNestedValue(translations, key);
+      if (name) {
+        // Extract initials from name (first letter of each word, max 2)
+        const initials = name.split(/[\s.]+/)
+          .filter(word => word.length > 0)
+          .slice(0, 2)
+          .map(word => word.charAt(0).toUpperCase())
+          .join('');
+        element.textContent = initials;
+      }
+    });
+
     // Update page title if meta.title exists
     if (translations.meta && translations.meta.title) {
       document.title = translations.meta.title;

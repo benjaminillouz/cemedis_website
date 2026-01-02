@@ -22,7 +22,8 @@
     "searchBtn": "Rechercher",
     "makeAppointment": "Prendre rendez-vous",
     "viewCenters": "Voir tous les centres",
-    "nearestCenter": "Centre le plus proche"
+    "nearestCenter": "Centre le plus proche",
+    "imageAlt": "Équipe médicale CEMEDIS"
   },
   "stats": {
     "centers": "Centres en Île-de-France",
@@ -84,12 +85,28 @@
     "subtitle": "Grâce à notre partenariat avec Alma, réglez vos soins dentaires en 2x, 3x ou 4x sans frais. Une solution simple et accessible pour prendre soin de votre sourire sans impacter votre budget.",
     "option2x": "2x sans frais",
     "option3x": "3x sans frais",
-    "option4x": "4x sans frais"
+    "option4x": "4x sans frais",
+    "imageAlt": "Paiement en plusieurs fois avec Alma - 2x 3x 4x sans frais"
   },
   "testimonials": {
     "sectionLabel": "Témoignages",
     "title": "Ce que disent nos patients",
-    "subtitle": "Des milliers de patients nous font confiance chaque année."
+    "subtitle": "Des milliers de patients nous font confiance chaque année.",
+    "review1": {
+      "text": "Excellente prise en charge pour une urgence dentaire. L'équipe est professionnelle et rassurante. Je recommande vivement !",
+      "name": "Marie P.",
+      "source": "Google Reviews"
+    },
+    "review2": {
+      "text": "Centre moderne et propre. Mon dentiste prend le temps d'expliquer chaque intervention. Très satisfait de mes soins.",
+      "name": "Jean D.",
+      "source": "Google Reviews"
+    },
+    "review3": {
+      "text": "J'amène mes enfants depuis 3 ans. L'équipe est patiente et douce avec eux. Ils n'ont plus peur du dentiste !",
+      "name": "Sophie L.",
+      "source": "Google Reviews"
+    }
   },
   "cta": {
     "title": "Prenez soin de votre sourire dès aujourd'hui",
@@ -160,6 +177,7 @@
   },
   "language": {
     "select": "Langue",
+    "selectLabel": "Sélectionner la langue",
     "fr": "Français",
     "en": "English",
     "es": "Español",
@@ -169,5 +187,11 @@
     "sr": "Српски",
     "pl": "Polski",
     "de": "Deutsch"
+  },
+  "accessibility": {
+    "menu": "Menu",
+    "facebook": "Facebook",
+    "instagram": "Instagram",
+    "linkedin": "LinkedIn"
   }
 }

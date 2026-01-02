@@ -22,7 +22,8 @@
     "searchBtn": "Buscar",
     "makeAppointment": "Pedir cita",
     "viewCenters": "Ver todos los centros",
-    "nearestCenter": "Centro más cercano"
+    "nearestCenter": "Centro más cercano",
+    "imageAlt": "Equipo médico CEMEDIS"
   },
   "stats": {
     "centers": "Centros en Île-de-France",
@@ -84,12 +85,28 @@
     "subtitle": "Gracias a nuestra asociación con Alma, pague sus cuidados dentales en 2, 3 o 4 cuotas sin intereses. Una solución simple y accesible para cuidar su sonrisa sin afectar su presupuesto.",
     "option2x": "2x sin intereses",
     "option3x": "3x sin intereses",
-    "option4x": "4x sin intereses"
+    "option4x": "4x sin intereses",
+    "imageAlt": "Pago en cuotas con Alma - 2x 3x 4x sin intereses"
   },
   "testimonials": {
     "sectionLabel": "Testimonios",
     "title": "Lo que dicen nuestros pacientes",
-    "subtitle": "Miles de pacientes confían en nosotros cada año."
+    "subtitle": "Miles de pacientes confían en nosotros cada año.",
+    "review1": {
+      "text": "Excelente atención para una urgencia dental. El equipo es profesional y tranquilizador. ¡Lo recomiendo mucho!",
+      "name": "María P.",
+      "source": "Google Reviews"
+    },
+    "review2": {
+      "text": "Centro moderno y limpio. Mi dentista se toma el tiempo de explicar cada intervención. Muy satisfecho con mi atención.",
+      "name": "Juan D.",
+      "source": "Google Reviews"
+    },
+    "review3": {
+      "text": "Llevo a mis hijos desde hace 3 años. El equipo es paciente y amable con ellos. ¡Ya no tienen miedo al dentista!",
+      "name": "Sofía L.",
+      "source": "Google Reviews"
+    }
   },
   "cta": {
     "title": "Cuide su sonrisa hoy",
@@ -160,6 +177,7 @@
   },
   "language": {
     "select": "Idioma",
+    "selectLabel": "Seleccionar idioma",
     "fr": "Français",
     "en": "English",
     "es": "Español",
@@ -169,5 +187,11 @@
     "sr": "Српски",
     "pl": "Polski",
     "de": "Deutsch"
+  },
+  "accessibility": {
+    "menu": "Menú",
+    "facebook": "Facebook",
+    "instagram": "Instagram",
+    "linkedin": "LinkedIn"
   }
 }
