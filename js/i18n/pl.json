@@ -22,7 +22,8 @@
     "searchBtn": "Szukaj",
     "makeAppointment": "Umów wizytę",
     "viewCenters": "Zobacz wszystkie centra",
-    "nearestCenter": "Najbliższe centrum"
+    "nearestCenter": "Najbliższe centrum",
+    "imageAlt": "Zespół medyczny CEMEDIS"
   },
   "stats": {
     "centers": "Centrów w Île-de-France",
@@ -84,12 +85,28 @@
     "subtitle": "Dzięki partnerstwu z Alma, płać za opiekę stomatologiczną w 2, 3 lub 4 ratach bez odsetek. Proste i dostępne rozwiązanie, aby dbać o swój uśmiech bez wpływu na budżet.",
     "option2x": "2 raty bez odsetek",
     "option3x": "3 raty bez odsetek",
-    "option4x": "4 raty bez odsetek"
+    "option4x": "4 raty bez odsetek",
+    "imageAlt": "Płatność ratalna z Alma - 2x 3x 4x bez odsetek"
   },
   "testimonials": {
     "sectionLabel": "Opinie",
     "title": "Co mówią nasi pacjenci",
-    "subtitle": "Tysiące pacjentów ufa nam każdego roku."
+    "subtitle": "Tysiące pacjentów ufa nam każdego roku.",
+    "review1": {
+      "text": "Doskonała opieka w nagłym przypadku stomatologicznym. Zespół jest profesjonalny i uspokajający. Gorąco polecam!",
+      "name": "Maria P.",
+      "source": "Google Reviews"
+    },
+    "review2": {
+      "text": "Nowoczesne i czyste centrum. Mój dentysta poświęca czas na wyjaśnienie każdego zabiegu. Bardzo zadowolony z opieki.",
+      "name": "Jan D.",
+      "source": "Google Reviews"
+    },
+    "review3": {
+      "text": "Przyprowadzam moje dzieci od 3 lat. Zespół jest cierpliwy i delikatny z nimi. Nie boją się już dentysty!",
+      "name": "Zofia L.",
+      "source": "Google Reviews"
+    }
   },
   "cta": {
     "title": "Zadbaj o swój uśmiech już dziś",
@@ -160,6 +177,7 @@
   },
   "language": {
     "select": "Język",
+    "selectLabel": "Wybierz język",
     "fr": "Français",
     "en": "English",
     "es": "Español",
@@ -169,5 +187,11 @@
     "sr": "Српски",
     "pl": "Polski",
     "de": "Deutsch"
+  },
+  "accessibility": {
+    "menu": "Menu",
+    "facebook": "Facebook",
+    "instagram": "Instagram",
+    "linkedin": "LinkedIn"
   }
 }

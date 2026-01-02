@@ -22,7 +22,8 @@
     "searchBtn": "Suchen",
     "makeAppointment": "Termin vereinbaren",
     "viewCenters": "Alle Zentren anzeigen",
-    "nearestCenter": "Nächstes Zentrum"
+    "nearestCenter": "Nächstes Zentrum",
+    "imageAlt": "CEMEDIS medizinisches Team"
   },
   "stats": {
     "centers": "Zentren in Île-de-France",
@@ -84,12 +85,28 @@
     "subtitle": "Dank unserer Partnerschaft mit Alma können Sie Ihre Zahnbehandlung in 2, 3 oder 4 zinsfreien Raten bezahlen. Eine einfache und zugängliche Lösung, um sich um Ihr Lächeln zu kümmern, ohne Ihr Budget zu belasten.",
     "option2x": "2 Raten zinsfrei",
     "option3x": "3 Raten zinsfrei",
-    "option4x": "4 Raten zinsfrei"
+    "option4x": "4 Raten zinsfrei",
+    "imageAlt": "Ratenzahlung mit Alma - 2x 3x 4x zinsfrei"
   },
   "testimonials": {
     "sectionLabel": "Bewertungen",
     "title": "Was unsere Patienten sagen",
-    "subtitle": "Tausende von Patienten vertrauen uns jedes Jahr."
+    "subtitle": "Tausende von Patienten vertrauen uns jedes Jahr.",
+    "review1": {
+      "text": "Ausgezeichnete Behandlung bei einem Zahnnotfall. Das Team ist professionell und beruhigend. Sehr empfehlenswert!",
+      "name": "Marie P.",
+      "source": "Google Reviews"
+    },
+    "review2": {
+      "text": "Modernes und sauberes Zentrum. Mein Zahnarzt nimmt sich Zeit, jeden Eingriff zu erklären. Sehr zufrieden mit der Behandlung.",
+      "name": "Johann D.",
+      "source": "Google Reviews"
+    },
+    "review3": {
+      "text": "Ich bringe meine Kinder seit 3 Jahren hierher. Das Team ist geduldig und sanft mit ihnen. Sie haben keine Angst mehr vor dem Zahnarzt!",
+      "name": "Sophie L.",
+      "source": "Google Reviews"
+    }
   },
   "cta": {
     "title": "Kümmern Sie sich heute um Ihr Lächeln",
@@ -160,6 +177,7 @@
   },
   "language": {
     "select": "Sprache",
+    "selectLabel": "Sprache auswählen",
     "fr": "Français",
     "en": "English",
     "es": "Español",
@@ -169,5 +187,11 @@
     "sr": "Српски",
     "pl": "Polski",
     "de": "Deutsch"
+  },
+  "accessibility": {
+    "menu": "Menü",
+    "facebook": "Facebook",
+    "instagram": "Instagram",
+    "linkedin": "LinkedIn"
   }
 }

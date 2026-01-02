@@ -22,7 +22,8 @@
     "searchBtn": "Search",
     "makeAppointment": "Make an appointment",
     "viewCenters": "View all centers",
-    "nearestCenter": "Nearest center"
+    "nearestCenter": "Nearest center",
+    "imageAlt": "CEMEDIS medical team"
   },
   "stats": {
     "centers": "Centers in Île-de-France",
@@ -84,12 +85,28 @@
     "subtitle": "Thanks to our partnership with Alma, pay for your dental care in 2, 3 or 4 interest-free installments. A simple and accessible solution to take care of your smile without impacting your budget.",
     "option2x": "2x interest-free",
     "option3x": "3x interest-free",
-    "option4x": "4x interest-free"
+    "option4x": "4x interest-free",
+    "imageAlt": "Pay in installments with Alma - 2x 3x 4x interest-free"
   },
   "testimonials": {
     "sectionLabel": "Testimonials",
     "title": "What our patients say",
-    "subtitle": "Thousands of patients trust us every year."
+    "subtitle": "Thousands of patients trust us every year.",
+    "review1": {
+      "text": "Excellent care for a dental emergency. The team is professional and reassuring. I highly recommend!",
+      "name": "Mary P.",
+      "source": "Google Reviews"
+    },
+    "review2": {
+      "text": "Modern and clean center. My dentist takes the time to explain each procedure. Very satisfied with my care.",
+      "name": "John D.",
+      "source": "Google Reviews"
+    },
+    "review3": {
+      "text": "I've been bringing my children for 3 years. The team is patient and gentle with them. They're no longer afraid of the dentist!",
+      "name": "Sophie L.",
+      "source": "Google Reviews"
+    }
   },
   "cta": {
     "title": "Take care of your smile today",
@@ -160,6 +177,7 @@
   },
   "language": {
     "select": "Language",
+    "selectLabel": "Select language",
     "fr": "Français",
     "en": "English",
     "es": "Español",
@@ -169,5 +187,11 @@
     "sr": "Српски",
     "pl": "Polski",
     "de": "Deutsch"
+  },
+  "accessibility": {
+    "menu": "Menu",
+    "facebook": "Facebook",
+    "instagram": "Instagram",
+    "linkedin": "LinkedIn"
   }
 }
