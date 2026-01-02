@@ -1,0 +1,173 @@
+{
+  "lang": "zh",
+  "dir": "ltr",
+  "meta": {
+    "title": "CEMEDIS - 法兰西岛牙科和医疗中心",
+    "description": "CEMEDIS - 法兰西岛牙科和医疗中心网络。25个中心，优质牙科护理，牙科急诊。在线预约。"
+  },
+  "nav": {
+    "home": "首页",
+    "centers": "我们的中心",
+    "services": "服务",
+    "reimbursements": "报销",
+    "emergencies": "急诊",
+    "joinUs": "加入我们",
+    "contact": "联系我们"
+  },
+  "hero": {
+    "badge": "法兰西岛25个中心",
+    "title": "我们的专业，您的健康",
+    "subtitle": "CEMEDIS汇集了25个牙科和医疗中心的专业团队。优质护理，人人可及，就在您身边。",
+    "searchPlaceholder": "按城市或地址搜索中心...",
+    "searchBtn": "搜索",
+    "makeAppointment": "预约",
+    "viewCenters": "查看所有中心",
+    "nearestCenter": "最近的中心"
+  },
+  "stats": {
+    "centers": "法兰西岛中心",
+    "practitioners": "资深医师",
+    "patients": "满意患者",
+    "emergencies": "急诊服务"
+  },
+  "services": {
+    "sectionLabel": "我们的服务",
+    "title": "为全家提供全面护理",
+    "subtitle": "从预防到专科护理，我们的团队在您口腔健康的每一步都陪伴着您。",
+    "learnMore": "了解更多",
+    "dentalCare": {
+      "title": "牙科护理",
+      "desc": "咨询、洁牙、龋齿治疗、根管治疗及所有常规牙科护理。"
+    },
+    "aesthetics": {
+      "title": "美容牙科",
+      "desc": "美白、贴面、隐形矫正器，打造璀璨和谐的笑容。"
+    },
+    "implants": {
+      "title": "种植牙",
+      "desc": "由经验丰富的专家进行牙齿种植，恢复完整笑容。"
+    },
+    "pediatrics": {
+      "title": "儿童牙科",
+      "desc": "在温馨友好的环境中为儿童提供专业护理。"
+    },
+    "surgery": {
+      "title": "口腔外科",
+      "desc": "由专业医师进行拔牙、骨移植和牙周手术。"
+    },
+    "emergency": {
+      "title": "牙科急诊",
+      "desc": "快速处理紧急情况：疼痛、外伤、感染。",
+      "link": "急诊通道"
+    }
+  },
+  "whyUs": {
+    "sectionLabel": "为什么选择我们",
+    "title": "卓越服务，为您的笑容",
+    "subtitle": "20多年来，CEMEDIS致力于在现代温馨的环境中提供优质护理。",
+    "certified": {
+      "title": "认证团队",
+      "desc": "我们所有的医师都持有资质，并定期参加培训以保持技术领先。"
+    },
+    "modern": {
+      "title": "现代设备",
+      "desc": "我们的中心配备最新技术：数字放射、3D扫描仪、牙科激光。"
+    },
+    "availability": {
+      "title": "便捷服务",
+      "desc": "延长营业时间、在线预约和急诊服务，满足您的需求。"
+    }
+  },
+  "payment": {
+    "sectionLabel": "付款方式",
+    "title": "分期支付您的护理费用",
+    "subtitle": "通过与Alma的合作，您可以分2、3或4期免息支付牙科护理费用。一个简单易用的解决方案，让您在不影响预算的情况下照顾您的笑容。",
+    "option2x": "2期免息",
+    "option3x": "3期免息",
+    "option4x": "4期免息"
+  },
+  "testimonials": {
+    "sectionLabel": "患者评价",
+    "title": "患者们的评价",
+    "subtitle": "每年成千上万的患者信任我们。"
+  },
+  "cta": {
+    "title": "今天就呵护您的笑容",
+    "subtitle": "找到最近的CEMEDIS中心，几次点击即可预约。",
+    "findCenter": "查找中心",
+    "contactUs": "联系我们"
+  },
+  "footer": {
+    "desc": "法兰西岛牙科和医疗中心网络。优质护理，人人可及，就在您身边。",
+    "navigation": "导航",
+    "servicesTitle": "服务",
+    "contactTitle": "联系方式",
+    "centersCount": "法兰西岛25个中心",
+    "copyright": "© 2024 CEMEDIS. 保留所有权利。",
+    "privacy": "隐私政策",
+    "legal": "法律声明",
+    "myReimbursements": "我的报销"
+  },
+  "emergencies": {
+    "title": "牙科急诊",
+    "subtitle": "牙痛、外伤、感染... 我们的中心随时为您提供快速护理。",
+    "available": "全天候服务",
+    "call": "立即致电",
+    "findCenter": "查找急诊中心"
+  },
+  "contact": {
+    "title": "联系我们",
+    "subtitle": "有问题吗？请随时联系我们。",
+    "name": "姓名",
+    "email": "电子邮件",
+    "phone": "电话",
+    "message": "留言",
+    "send": "发送",
+    "success": "您的留言已成功发送。",
+    "error": "发生错误，请重试。"
+  },
+  "joinUs": {
+    "title": "加入我们的团队",
+    "subtitle": "您是医疗专业人员吗？加入CEMEDIS网络。",
+    "viewOffer": "查看职位",
+    "vacations": "可用班次",
+    "dentist": "牙科医生",
+    "assistant": "牙科助理",
+    "secretary": "医务秘书"
+  },
+  "reimbursements": {
+    "title": "我的报销",
+    "subtitle": "关于牙齿假体报销您需要了解的一切",
+    "hundredPercent": "100%医保",
+    "controlled": "受控价格",
+    "free": "自由定价"
+  },
+  "common": {
+    "backHome": "返回首页",
+    "seeOurCenters": "查看我们的中心",
+    "dentalCare": "牙科护理",
+    "aesthetics": "美容牙科",
+    "implantology": "种植牙",
+    "pediatrics": "儿童牙科"
+  },
+  "success": {
+    "title": "付款成功",
+    "message": "您的付款已成功完成。感谢您的信任。确认邮件将很快发送给您。"
+  },
+  "denied": {
+    "title": "付款失败",
+    "message": "无法处理您的付款。请检查您的银行信息并重试。如果问题持续，请联系您的银行或我们的团队。"
+  },
+  "language": {
+    "select": "语言",
+    "fr": "Français",
+    "en": "English",
+    "es": "Español",
+    "pt": "Português",
+    "ar": "العربية",
+    "zh": "中文",
+    "sr": "Српски",
+    "pl": "Polski",
+    "de": "Deutsch"
+  }
+}

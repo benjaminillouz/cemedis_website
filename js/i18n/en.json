@@ -1,0 +1,173 @@
+{
+  "lang": "en",
+  "dir": "ltr",
+  "meta": {
+    "title": "CEMEDIS - Dental & Medical Centers in Île-de-France",
+    "description": "CEMEDIS - Network of dental and medical centers in Île-de-France. 25 centers, quality dental care, dental emergencies. Book online."
+  },
+  "nav": {
+    "home": "Home",
+    "centers": "Our Centers",
+    "services": "Services",
+    "reimbursements": "Reimbursements",
+    "emergencies": "Emergencies",
+    "joinUs": "Join Us",
+    "contact": "Contact"
+  },
+  "hero": {
+    "badge": "25 centers in Île-de-France",
+    "title": "Our profession, Your health",
+    "subtitle": "CEMEDIS brings together teams of passionate professionals in 25 dental and medical centers. Quality care, accessible to all, close to you.",
+    "searchPlaceholder": "Search for a center by city or address...",
+    "searchBtn": "Search",
+    "makeAppointment": "Make an appointment",
+    "viewCenters": "View all centers",
+    "nearestCenter": "Nearest center"
+  },
+  "stats": {
+    "centers": "Centers in Île-de-France",
+    "practitioners": "Qualified practitioners",
+    "patients": "Satisfied patients",
+    "emergencies": "Emergencies available"
+  },
+  "services": {
+    "sectionLabel": "Our Services",
+    "title": "Complete care for the whole family",
+    "subtitle": "From prevention to specialized care, our teams support you at every stage of your oral health journey.",
+    "learnMore": "Learn more",
+    "dentalCare": {
+      "title": "Dental Care",
+      "desc": "Consultations, scaling, cavity treatment, devitalization and all common dental care."
+    },
+    "aesthetics": {
+      "title": "Cosmetic Dentistry",
+      "desc": "Whitening, veneers, invisible aligners for a radiant and harmonious smile."
+    },
+    "implants": {
+      "title": "Implantology",
+      "desc": "Dental implant placement by experienced specialists to restore a complete smile."
+    },
+    "pediatrics": {
+      "title": "Pediatric Dentistry",
+      "desc": "Child-friendly care in a reassuring and caring environment."
+    },
+    "surgery": {
+      "title": "Surgery",
+      "desc": "Extractions, bone grafts and periodontal surgery by specialized practitioners."
+    },
+    "emergency": {
+      "title": "Dental Emergencies",
+      "desc": "Rapid care for emergencies: pain, trauma, infections.",
+      "link": "Emergency access"
+    }
+  },
+  "whyUs": {
+    "sectionLabel": "Why choose us",
+    "title": "Excellence at the service of your smile",
+    "subtitle": "For over 20 years, CEMEDIS has been committed to providing quality care in a modern and welcoming environment.",
+    "certified": {
+      "title": "Certified Teams",
+      "desc": "All our practitioners are qualified and regularly attend training to stay at the forefront of techniques."
+    },
+    "modern": {
+      "title": "Modern Equipment",
+      "desc": "Our centers are equipped with the latest technologies: digital radiology, 3D scanners, dental lasers."
+    },
+    "availability": {
+      "title": "Availability",
+      "desc": "Extended hours, online booking and emergency service to meet your needs."
+    }
+  },
+  "payment": {
+    "sectionLabel": "Payment options",
+    "title": "Pay for your care in installments",
+    "subtitle": "Thanks to our partnership with Alma, pay for your dental care in 2, 3 or 4 interest-free installments. A simple and accessible solution to take care of your smile without impacting your budget.",
+    "option2x": "2x interest-free",
+    "option3x": "3x interest-free",
+    "option4x": "4x interest-free"
+  },
+  "testimonials": {
+    "sectionLabel": "Testimonials",
+    "title": "What our patients say",
+    "subtitle": "Thousands of patients trust us every year."
+  },
+  "cta": {
+    "title": "Take care of your smile today",
+    "subtitle": "Find the nearest CEMEDIS center and book an appointment in a few clicks.",
+    "findCenter": "Find a center",
+    "contactUs": "Contact us"
+  },
+  "footer": {
+    "desc": "Network of dental and medical centers in Île-de-France. Quality care, accessible to all, close to you.",
+    "navigation": "Navigation",
+    "servicesTitle": "Services",
+    "contactTitle": "Contact",
+    "centersCount": "25 centers in Île-de-France",
+    "copyright": "© 2024 CEMEDIS. All rights reserved.",
+    "privacy": "Privacy Policy",
+    "legal": "Legal Notice",
+    "myReimbursements": "My Reimbursements"
+  },
+  "emergencies": {
+    "title": "Dental Emergencies",
+    "subtitle": "Dental pain, trauma, infections... Our centers welcome you for rapid care.",
+    "available": "Available 24/7",
+    "call": "Call now",
+    "findCenter": "Find an emergency center"
+  },
+  "contact": {
+    "title": "Contact us",
+    "subtitle": "Have a question? Don't hesitate to contact us.",
+    "name": "Name",
+    "email": "Email",
+    "phone": "Phone",
+    "message": "Message",
+    "send": "Send",
+    "success": "Your message has been sent successfully.",
+    "error": "An error occurred. Please try again."
+  },
+  "joinUs": {
+    "title": "Join our teams",
+    "subtitle": "Are you a healthcare professional? Join the CEMEDIS network.",
+    "viewOffer": "View offer",
+    "vacations": "Available shifts",
+    "dentist": "Dental Surgeon",
+    "assistant": "Dental Assistant",
+    "secretary": "Medical Secretary"
+  },
+  "reimbursements": {
+    "title": "My Reimbursements",
+    "subtitle": "Everything you need to know about dental prosthesis reimbursement",
+    "hundredPercent": "100% Healthcare",
+    "controlled": "Controlled rates",
+    "free": "Free rates"
+  },
+  "common": {
+    "backHome": "Back to home",
+    "seeOurCenters": "See our centers",
+    "dentalCare": "Dental Care",
+    "aesthetics": "Aesthetics",
+    "implantology": "Implantology",
+    "pediatrics": "Pediatrics"
+  },
+  "success": {
+    "title": "Payment Accepted",
+    "message": "Your payment was successful. Thank you for your trust. A confirmation email will be sent to you shortly."
+  },
+  "denied": {
+    "title": "Payment Declined",
+    "message": "Your payment could not be processed. Please check your bank details and try again. If the problem persists, contact your bank or our team."
+  },
+  "language": {
+    "select": "Language",
+    "fr": "Français",
+    "en": "English",
+    "es": "Español",
+    "pt": "Português",
+    "ar": "العربية",
+    "zh": "中文",
+    "sr": "Српски",
+    "pl": "Polski",
+    "de": "Deutsch"
+  }
+}
