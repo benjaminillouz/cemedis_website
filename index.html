@@ -122,23 +122,23 @@
           <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
             <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
           </svg>
-          <span>25 centres en Île-de-France</span>
+          <span data-i18n="hero.badge">25 centres en Île-de-France</span>
         </div>
 
-        <h1>Notre métier, Votre santé</h1>
+        <h1 data-i18n="hero.title">Notre métier, Votre santé</h1>
 
-        <p class="hero-subtitle">
+        <p class="hero-subtitle" data-i18n="hero.subtitle">
           CEMEDIS réunit des équipes de professionnels passionnés dans 25 centres dentaires et médicaux.
           Des soins de qualité, accessibles à tous, près de chez vous.
         </p>
 
         <div class="hero-search">
-          <input type="text" id="hero-search" placeholder="Rechercher un centre par ville ou adresse...">
+          <input type="text" id="hero-search" data-i18n-placeholder="hero.searchPlaceholder" placeholder="Rechercher un centre par ville ou adresse...">
           <button id="search-btn" class="btn btn-primary">
             <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"/>
             </svg>
-            Rechercher
+            <span data-i18n="hero.searchBtn">Rechercher</span>
           </button>
         </div>
 
@@ -147,21 +147,21 @@
             <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5"/>
             </svg>
-            Prendre rendez-vous
+            <span data-i18n="hero.makeAppointment">Prendre rendez-vous</span>
           </a>
           <a href="etablissements.html" class="btn btn-secondary" style="background: transparent; border-color: white; color: white;">
             <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"/>
               <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"/>
             </svg>
-            Voir tous les centres
+            <span data-i18n="hero.viewCenters">Voir tous les centres</span>
           </a>
           <button onclick="findNearestCenter()" class="btn btn-secondary" style="background: transparent; border-color: white; color: white;">
             <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"/>
               <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"/>
             </svg>
-            Centre le plus proche
+            <span data-i18n="hero.nearestCenter">Centre le plus proche</span>
           </button>
         </div>
       </div>
@@ -184,7 +184,7 @@
             </svg>
           </div>
           <div class="stat-number" id="stat-centers">25</div>
-          <div class="stat-label">Centres en Île-de-France</div>
+          <div class="stat-label" data-i18n="stats.centers">Centres en Île-de-France</div>
         </div>
 
         <div class="stat-card scroll-animate" style="animation-delay: 100ms;">
@@ -194,7 +194,7 @@
             </svg>
           </div>
           <div class="stat-number">260+</div>
-          <div class="stat-label">Praticiens qualifiés</div>
+          <div class="stat-label" data-i18n="stats.practitioners">Praticiens qualifiés</div>
         </div>
 
         <div class="stat-card scroll-animate" style="animation-delay: 200ms;">
@@ -204,7 +204,7 @@
             </svg>
           </div>
           <div class="stat-number">100k+</div>
-          <div class="stat-label">Patients satisfaits</div>
+          <div class="stat-label" data-i18n="stats.patients">Patients satisfaits</div>
         </div>
 
         <div class="stat-card scroll-animate" style="animation-delay: 300ms;">
@@ -214,7 +214,7 @@
             </svg>
           </div>
           <div class="stat-number" style="color: #DC2626;">24/7</div>
-          <div class="stat-label">Urgences disponibles</div>
+          <div class="stat-label" data-i18n="stats.emergencies">Urgences disponibles</div>
         </div>
       </div>
     </div>
@@ -224,18 +224,18 @@
   <section class="section bg-gray">
     <div class="container">
       <div class="section-header">
-        <span class="section-label">Nos Services</span>
-        <h2>Des soins complets pour toute la famille</h2>
-        <p>De la prévention aux soins spécialisés, nos équipes vous accompagnent à chaque étape de votre parcours de santé bucco-dentaire.</p>
+        <span class="section-label" data-i18n="services.sectionLabel">Nos Services</span>
+        <h2 data-i18n="services.title">Des soins complets pour toute la famille</h2>
+        <p data-i18n="services.subtitle">De la prévention aux soins spécialisés, nos équipes vous accompagnent à chaque étape de votre parcours de santé bucco-dentaire.</p>
       </div>
 
       <div class="services-grid">
         <div class="service-card scroll-animate">
           <div class="service-icon">🦷</div>
-          <h3>Soins Dentaires</h3>
-          <p>Consultations, détartrage, traitement des caries, dévitalisation et tous les soins dentaires courants.</p>
+          <h3 data-i18n="services.dentalCare.title">Soins Dentaires</h3>
+          <p data-i18n="services.dentalCare.desc">Consultations, détartrage, traitement des caries, dévitalisation et tous les soins dentaires courants.</p>
           <a href="consultations.html" class="service-link">
-            En savoir plus
+            <span data-i18n="services.learnMore">En savoir plus</span>
             <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
             </svg>
@@ -244,10 +244,10 @@
 
         <div class="service-card scroll-animate" style="animation-delay: 100ms;">
           <div class="service-icon">✨</div>
-          <h3>Esthétique Dentaire</h3>
-          <p>Blanchiment, facettes, aligneurs invisibles pour un sourire éclatant et harmonieux.</p>
+          <h3 data-i18n="services.aesthetics.title">Esthétique Dentaire</h3>
+          <p data-i18n="services.aesthetics.desc">Blanchiment, facettes, aligneurs invisibles pour un sourire éclatant et harmonieux.</p>
           <a href="consultations.html" class="service-link">
-            En savoir plus
+            <span data-i18n="services.learnMore">En savoir plus</span>
             <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
             </svg>
@@ -256,10 +256,10 @@
 
         <div class="service-card scroll-animate" style="animation-delay: 200ms;">
           <div class="service-icon">🔧</div>
-          <h3>Implantologie</h3>
-          <p>Pose d'implants dentaires par des spécialistes expérimentés pour retrouver un sourire complet.</p>
+          <h3 data-i18n="services.implants.title">Implantologie</h3>
+          <p data-i18n="services.implants.desc">Pose d'implants dentaires par des spécialistes expérimentés pour retrouver un sourire complet.</p>
           <a href="consultations.html" class="service-link">
-            En savoir plus
+            <span data-i18n="services.learnMore">En savoir plus</span>
             <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
             </svg>
@@ -268,10 +268,10 @@
 
         <div class="service-card scroll-animate" style="animation-delay: 300ms;">
           <div class="service-icon">👶</div>
-          <h3>Pédodontie</h3>
-          <p>Soins adaptés aux enfants dans un environnement rassurant et bienveillant.</p>
+          <h3 data-i18n="services.pediatrics.title">Pédodontie</h3>
+          <p data-i18n="services.pediatrics.desc">Soins adaptés aux enfants dans un environnement rassurant et bienveillant.</p>
           <a href="consultations.html" class="service-link">
-            En savoir plus
+            <span data-i18n="services.learnMore">En savoir plus</span>
             <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
             </svg>
@@ -280,10 +280,10 @@
 
         <div class="service-card scroll-animate" style="animation-delay: 400ms;">
           <div class="service-icon">😴</div>
-          <h3>Chirurgie</h3>
-          <p>Extractions, greffes osseuses et chirurgie parodontale par des praticiens spécialisés.</p>
+          <h3 data-i18n="services.surgery.title">Chirurgie</h3>
+          <p data-i18n="services.surgery.desc">Extractions, greffes osseuses et chirurgie parodontale par des praticiens spécialisés.</p>
           <a href="consultations.html" class="service-link">
-            En savoir plus
+            <span data-i18n="services.learnMore">En savoir plus</span>
             <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
             </svg>
@@ -292,10 +292,10 @@
 
         <div class="service-card scroll-animate" style="animation-delay: 500ms; border: 2px solid #DC2626;">
           <div class="service-icon" style="background: #FEE2E2;">🚨</div>
-          <h3>Urgences Dentaires</h3>
-          <p>Prise en charge rapide des urgences : douleurs, traumatismes, infections.</p>
+          <h3 data-i18n="services.emergency.title">Urgences Dentaires</h3>
+          <p data-i18n="services.emergency.desc">Prise en charge rapide des urgences : douleurs, traumatismes, infections.</p>
           <a href="urgences.html" class="service-link" style="color: #DC2626;">
-            Accès urgences
+            <span data-i18n="services.emergency.link">Accès urgences</span>
             <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
             </svg>
@@ -309,9 +309,9 @@
   <section class="section">
     <div class="container">
       <div class="section-header">
-        <span class="section-label">Pourquoi nous choisir</span>
-        <h2>L'excellence au service de votre sourire</h2>
-        <p>Depuis plus de 20 ans, CEMEDIS s'engage à offrir des soins de qualité dans un environnement moderne et accueillant.</p>
+        <span class="section-label" data-i18n="whyUs.sectionLabel">Pourquoi nous choisir</span>
+        <h2 data-i18n="whyUs.title">L'excellence au service de votre sourire</h2>
+        <p data-i18n="whyUs.subtitle">Depuis plus de 20 ans, CEMEDIS s'engage à offrir des soins de qualité dans un environnement moderne et accueillant.</p>
       </div>
 
       <div class="services-grid">
@@ -321,8 +321,8 @@
               <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 01-1.043 3.296 3.745 3.745 0 01-3.296 1.043A3.745 3.745 0 0112 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 01-3.296-1.043 3.745 3.745 0 01-1.043-3.296A3.745 3.745 0 013 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 011.043-3.296 3.746 3.746 0 013.296-1.043A3.746 3.746 0 0112 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 013.296 1.043 3.746 3.746 0 011.043 3.296A3.745 3.745 0 0121 12z"/>
             </svg>
           </div>
-          <h3>Équipes Certifiées</h3>
-          <p>Tous nos praticiens sont diplômés et suivent régulièrement des formations pour rester à la pointe des techniques.</p>
+          <h3 data-i18n="whyUs.certified.title">Équipes Certifiées</h3>
+          <p data-i18n="whyUs.certified.desc">Tous nos praticiens sont diplômés et suivent régulièrement des formations pour rester à la pointe des techniques.</p>
         </div>
 
         <div class="service-card scroll-animate" style="animation-delay: 100ms;">
@@ -331,8 +331,8 @@
               <path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17L17.25 21A2.652 2.652 0 0021 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 11-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 004.486-6.336l-3.276 3.277a3.004 3.004 0 01-2.25-2.25l3.276-3.276a4.5 4.5 0 00-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437l1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008z"/>
             </svg>
           </div>
-          <h3>Équipements Modernes</h3>
-          <p>Nos centres sont équipés des dernières technologies : radiologie numérique, scanners 3D, lasers dentaires.</p>
+          <h3 data-i18n="whyUs.modern.title">Équipements Modernes</h3>
+          <p data-i18n="whyUs.modern.desc">Nos centres sont équipés des dernières technologies : radiologie numérique, scanners 3D, lasers dentaires.</p>
         </div>
 
         <div class="service-card scroll-animate" style="animation-delay: 200ms;">
@@ -341,8 +341,8 @@
               <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"/>
             </svg>
           </div>
-          <h3>Disponibilité</h3>
-          <p>Horaires étendus, prise de rendez-vous en ligne et service d'urgence pour répondre à vos besoins.</p>
+          <h3 data-i18n="whyUs.availability.title">Disponibilité</h3>
+          <p data-i18n="whyUs.availability.desc">Horaires étendus, prise de rendez-vous en ligne et service d'urgence pour répondre à vos besoins.</p>
         </div>
       </div>
     </div>
@@ -353,16 +353,16 @@
     <div class="container">
       <div style="display: flex; align-items: center; justify-content: center; gap: 3rem; flex-wrap: wrap; padding: 2rem 0;">
         <div style="flex: 1; min-width: 280px; max-width: 500px;">
-          <span class="section-label">Facilités de paiement</span>
-          <h2 style="margin-top: 0.5rem; margin-bottom: 1rem;">Payez vos soins en plusieurs fois</h2>
-          <p style="color: var(--cemedis-gray-600); margin-bottom: 1.5rem;">
+          <span class="section-label" data-i18n="payment.sectionLabel">Facilités de paiement</span>
+          <h2 style="margin-top: 0.5rem; margin-bottom: 1rem;" data-i18n="payment.title">Payez vos soins en plusieurs fois</h2>
+          <p style="color: var(--cemedis-gray-600); margin-bottom: 1.5rem;" data-i18n="payment.subtitle">
             Grâce à notre partenariat avec Alma, réglez vos soins dentaires en 2x, 3x ou 4x sans frais.
             Une solution simple et accessible pour prendre soin de votre sourire sans impacter votre budget.
           </p>
           <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
-            <span style="background: #FA5022; color: white; padding: 0.5rem 1rem; border-radius: 8px; font-weight: 600;">2x sans frais</span>
-            <span style="background: #FA5022; color: white; padding: 0.5rem 1rem; border-radius: 8px; font-weight: 600;">3x sans frais</span>
-            <span style="background: #FA5022; color: white; padding: 0.5rem 1rem; border-radius: 8px; font-weight: 600;">4x sans frais</span>
+            <span style="background: #FA5022; color: white; padding: 0.5rem 1rem; border-radius: 8px; font-weight: 600;" data-i18n="payment.option2x">2x sans frais</span>
+            <span style="background: #FA5022; color: white; padding: 0.5rem 1rem; border-radius: 8px; font-weight: 600;" data-i18n="payment.option3x">3x sans frais</span>
+            <span style="background: #FA5022; color: white; padding: 0.5rem 1rem; border-radius: 8px; font-weight: 600;" data-i18n="payment.option4x">4x sans frais</span>
           </div>
         </div>
         <div style="flex: 0 0 auto;">
@@ -376,9 +376,9 @@
   <section class="section">
     <div class="container">
       <div class="section-header">
-        <span class="section-label">Témoignages</span>
-        <h2>Ce que disent nos patients</h2>
-        <p>Des milliers de patients nous font confiance chaque année.</p>
+        <span class="section-label" data-i18n="testimonials.sectionLabel">Témoignages</span>
+        <h2 data-i18n="testimonials.title">Ce que disent nos patients</h2>
+        <p data-i18n="testimonials.subtitle">Des milliers de patients nous font confiance chaque année.</p>
       </div>
 
       <div class="services-grid">
@@ -425,18 +425,18 @@
   <section class="section cta">
     <div class="container">
       <div class="cta-content">
-        <h2>Prenez soin de votre sourire dès aujourd'hui</h2>
-        <p>Trouvez le centre CEMEDIS le plus proche et prenez rendez-vous en quelques clics.</p>
+        <h2 data-i18n="cta.title">Prenez soin de votre sourire dès aujourd'hui</h2>
+        <p data-i18n="cta.subtitle">Trouvez le centre CEMEDIS le plus proche et prenez rendez-vous en quelques clics.</p>
         <div class="cta-actions">
           <a href="etablissements.html" class="btn btn-white btn-lg">
             <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"/>
               <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"/>
             </svg>
-            Trouver un centre
+            <span data-i18n="cta.findCenter">Trouver un centre</span>
           </a>
           <a href="contact.html" class="btn btn-secondary btn-lg" style="background: transparent; border-color: white; color: white;">
-            Nous contacter
+            <span data-i18n="cta.contactUs">Nous contacter</span>
           </a>
         </div>
       </div>
@@ -451,7 +451,7 @@
           <a href="index.html" class="footer-logo">
             <img src="https://static.wixstatic.com/media/b07e07_d6f462ab3bef47ba8e8aa341a2ed619d~mv2.png" alt="CEMEDIS" height="55">
           </a>
-          <p class="footer-desc">
+          <p class="footer-desc" data-i18n="footer.desc">
             Réseau de centres dentaires et médicaux en Île-de-France. Des soins de qualité, accessibles à tous, près de chez vous.
           </p>
           <div class="footer-social">
@@ -474,46 +474,46 @@
         </div>
 
         <div class="footer-column">
-          <h4>Navigation</h4>
+          <h4 data-i18n="footer.navigation">Navigation</h4>
           <ul class="footer-links">
-            <li><a href="index.html">Accueil</a></li>
-            <li><a href="etablissements.html">Nos Centres</a></li>
-            <li><a href="consultations.html">Services</a></li>
-            <li><a href="urgences.html">Urgences</a></li>
-            <li><a href="rejoindre.html">Nous Rejoindre</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="index.html" data-i18n="nav.home">Accueil</a></li>
+            <li><a href="etablissements.html" data-i18n="nav.centers">Nos Centres</a></li>
+            <li><a href="consultations.html" data-i18n="nav.services">Services</a></li>
+            <li><a href="urgences.html" data-i18n="nav.emergencies">Urgences</a></li>
+            <li><a href="rejoindre.html" data-i18n="nav.joinUs">Nous Rejoindre</a></li>
+            <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
           </ul>
         </div>
 
         <div class="footer-column">
-          <h4>Services</h4>
+          <h4 data-i18n="footer.servicesTitle">Services</h4>
           <ul class="footer-links">
-            <li><a href="consultations.html">Soins Dentaires</a></li>
-            <li><a href="consultations.html">Esthétique</a></li>
-            <li><a href="consultations.html">Implantologie</a></li>
-            <li><a href="consultations.html">Pédodontie</a></li>
-            <li><a href="remboursements.html">Mes Remboursements</a></li>
-            <li><a href="urgences.html">Urgences</a></li>
+            <li><a href="consultations.html" data-i18n="common.dentalCare">Soins Dentaires</a></li>
+            <li><a href="consultations.html" data-i18n="common.aesthetics">Esthétique</a></li>
+            <li><a href="consultations.html" data-i18n="common.implantology">Implantologie</a></li>
+            <li><a href="consultations.html" data-i18n="common.pediatrics">Pédodontie</a></li>
+            <li><a href="remboursements.html" data-i18n="footer.myReimbursements">Mes Remboursements</a></li>
+            <li><a href="urgences.html" data-i18n="nav.emergencies">Urgences</a></li>
           </ul>
         </div>
 
         <div class="footer-column">
-          <h4>Contact</h4>
+          <h4 data-i18n="footer.contactTitle">Contact</h4>
           <div class="footer-contact-item">
             <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"/>
               <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"/>
             </svg>
-            <span>25 centres en Île-de-France</span>
+            <span data-i18n="footer.centersCount">25 centres en Île-de-France</span>
           </div>
         </div>
       </div>
 
       <div class="footer-bottom">
-        <p>&copy; 2024 CEMEDIS. Tous droits réservés.</p>
+        <p data-i18n="footer.copyright">&copy; 2024 CEMEDIS. Tous droits réservés.</p>
         <div class="footer-legal">
-          <a href="privacy.html">Politique de confidentialité</a>
-          <a href="mentions-legales.html">Mentions légales</a>
+          <a href="privacy.html" data-i18n="footer.privacy">Politique de confidentialité</a>
+          <a href="mentions-legales.html" data-i18n="footer.legal">Mentions légales</a>
         </div>
       </div>
     </div>

@@ -1857,3 +1857,130 @@ body.rtl ol {
 body.rtl li::marker {
   unicode-bidi: embed;
 }
+
+/* ===== Multi-language Text Support ===== */
+
+/* Global text overflow handling */
+h1, h2, h3, h4, h5, h6, p, span, a, li, td, th, label, button {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+/* Prevent layout breaking with long translated text */
+.nav-link,
+.mobile-nav-link,
+.btn,
+.service-link {
+  white-space: nowrap;
+}
+
+@media (max-width: 1200px) {
+  .nav-link {
+    font-size: 0.85rem;
+    padding: 0.4rem 0.6rem;
+  }
+}
+
+/* Section header text handling */
+.section-header h2 {
+  word-wrap: break-word;
+  hyphens: auto;
+}
+
+.section-header p {
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Card content text handling */
+.service-card h3,
+.testimonial-card h3 {
+  min-height: 1.5em;
+}
+
+.service-card p {
+  line-height: 1.6;
+  min-height: 3em;
+}
+
+/* Chinese language specific */
+html[lang="zh"] body {
+  font-family: "PingFang SC", "Microsoft YaHei", "Noto Sans SC", sans-serif;
+}
+
+html[lang="zh"] h1,
+html[lang="zh"] h2,
+html[lang="zh"] h3 {
+  letter-spacing: 0.02em;
+}
+
+/* Arabic language specific */
+html[lang="ar"] body {
+  font-family: "Noto Sans Arabic", "Segoe UI", Tahoma, sans-serif;
+  line-height: 1.8;
+}
+
+/* Serbian (Cyrillic) specific */
+html[lang="sr"] body {
+  font-family: "Noto Sans", "Segoe UI", sans-serif;
+}
+
+/* Footer text handling for long translations */
+.footer-column h4 {
+  white-space: nowrap;
+}
+
+.footer-links a {
+  display: inline-block;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* CTA section responsive text */
+.cta-content h2 {
+  font-size: clamp(1.5rem, 4vw, 2.25rem);
+}
+
+.cta-content p {
+  font-size: clamp(0.9rem, 2vw, 1.125rem);
+}
+
+/* Hero section responsive text for translations */
+.hero h1 {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  line-height: 1.2;
+}
+
+.hero-subtitle {
+  font-size: clamp(1rem, 2.5vw, 1.25rem);
+  line-height: 1.7;
+}
+
+/* Payment section alignment fix */
+.section.bg-gray [style*="display: flex"] {
+  align-items: flex-start;
+}
+
+/* Stats label text sizing */
+.stat-label {
+  font-size: clamp(0.75rem, 1.5vw, 0.875rem);
+  line-height: 1.4;
+}
+
+/* Button text sizing for longer translations */
+.btn span {
+  display: inline-block;
+}
+
+/* Mobile menu language selector position */
+@media (max-width: 1024px) {
+  .language-selector-mobile {
+    text-align: left;
+  }
+
+  body.rtl .language-selector-mobile {
+    text-align: right;
+  }
+}
